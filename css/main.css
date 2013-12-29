@@ -1,0 +1,241 @@
+/* Orga générale styles inspirées de la méthode Daisy :
+reset
+typo (charte typographique)
+formulaires (forms)
+rythme, grille (grid)
+positionnement des blocs principaux (layout)
+styles génériques (skins)
+variantes par gabarits (pages)
+surcharges
+ie
+*/
+
+
+
+/* Imports */
+/*@import url("reset.css");
+@import url("global-forms.css");*/
+
+/**************************** Global **********************/
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #1A1A1A;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans
+    Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.1;
+    text-align: left;
+    width: 100%;
+}
+
+/* Headings */
+h1 {font-size: 1.571em} /* 22px*/
+/*h2 {font-size: 1.429em} /* 20px*/*/
+h2 {font-size: 1.286em} /* 18px*/
+/*h4 {font-size: 1.143em} /* 16px*/*/
+h3 {font-size: 1em} /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1;
+}
+
+h1{
+    font-weight: bold;
+}
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+    color: #333;
+    padding: 0 1px;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+color: #fff;
+text-decoration: none;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1.143em;
+}
+
+* p:last-child {
+    margin-bottom: 0;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+
+/* Lists */
+ul {
+    list-style: none;
+    /*margin: 1em 0 1.5em 1.5em;*/
+}
+
+li{
+        display: inline-block;
+        vertical-align: top;
+}
+/*dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+/* Quotes */
+/*blockquote {font-style: italic;}
+cite {}
+q {}*/
+
+
+
+
+/**************************** Header **********************/
+
+header{
+    width: 100%;
+    background: #DB0D7C;   
+    margin-bottom: 10px;
+}
+
+nav, .featured, .seasonal, footer{
+        width: 90%;
+        max-width: 920px;
+        padding: 2%;
+        margin: 0 auto;
+}
+
+nav ul{
+    /*height: 70px;*/
+    margin-bottom: 10px;
+}
+
+nav .nav-btn{
+    border: 1px solid #000;
+    height: 70px;
+    width: 10%;
+    max-width: 90px;
+    padding: 1px;
+    margin: 0.5%;
+}
+nav .nav-btn a{
+    vertical-align: middle;
+}
+
+nav .title-btn{
+    width: 60%;
+    max-width: 60%;
+    border: none;
+}
+
+nav .menu-btn{
+    display: none;
+}
+
+nav .item-btn{
+    height: 40px;
+}
+
+/* Adaptation tablettes */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    nav .title-btn{
+        max-width: 50%;
+    }
+    nav .item-nav{;
+        width: 100%
+    }
+    nav .item-btn{
+        width: 22%;
+        max-width: 22%;
+    }
+}
+
+
+
+/* Adaptation smartphone */
+@media screen and (max-width: 480px) {
+    nav .nav-btn{
+        width: 22%;
+        margin: 0 auto;
+    }
+    nav .title-btn{
+        display: block;
+        width: 100%;
+    }
+    nav .title-btn h2 {
+        display: none;
+    }
+    nav .item-nav{
+        display: none;
+    }
+    nav .menu-btn{
+        display: inline-block;
+    }
+}
+/**************************** Featured **********************/
+
+.feat-carousel{
+    width: 100%;
+}
+
+.featured img{
+    width: 100%;
+    min-width: 200px;
+    max-width: 900px;
+}
+
+
+
+
+
+/**************************** Seasonal **********************/
+
+
+/***** Item *********/
+.seasonal ul{
+    width: 100%;
+}
+
+.seasonal .item-container{
+    background: #888;
+    padding: 5px;
+    height: 200px;
+    min-height: 200px;
+    overflow: auto;
+    width: 160px;
+    margin: 0 0 10px 0;
+}
+
+.seasonal .item-body{
+    width: 100%;
+}
+
+.seasonal .item-body img{
+    width: 100%;
+    min-width: 100px;
+    max-width: 250px;
+}
+
+.seasonal header{
+    background-color: transparent;
+}
+
+
+
+/**************************** Footer **********************/
+
+
+/***** contact *********/
+
+
+/***** sitemap *********/
