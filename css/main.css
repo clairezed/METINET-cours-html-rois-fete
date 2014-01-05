@@ -17,6 +17,16 @@ ie
 @import url("global-forms.css");*/
 
 /**************************** Global **********************/
+
+html{
+    height: 100%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /* Body */
 body {
     /*background: #EEE;*/
@@ -28,16 +38,8 @@ body {
     line-height: 1.1;
     text-align: left;
     width: 100%;
+    height: 100%;
 }
-
-/* Headings */
-h1 {font-size: 1.571em} /* 22px*/
-/*h2 {font-size: 1.429em} /* 20px*/*/
-h2 {
-    font-size: 1.286em;
-    } /* 18px*/
-/*h4 {font-size: 1.143em} /* 16px*/*/
-h3 {font-size: 1em} /* 14px */
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
@@ -45,9 +47,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1{
-    font-weight: bold;
-}
+/* Headings */
+h1 {font-size: 1.571em;
+    font-weight: bold;} /* 22px*/
+h2 { font-size: 1.286em;    } /* 18px*/
+h3 {font-size: 1em} /* 14px */
+/*h2 {font-size: 1.429em} /* 20px*/
+/*h4 {font-size: 1.143em} /* 16px*/
+
+
 
 /* Anchors */
 a {
@@ -83,89 +91,147 @@ em, i {
     font-style: italic;
 }
 
-::-moz-selection {background: #F6CF74; color: #fff;}
-::selection {background: #F6CF74; color: #fff;}
 
-/* Lists */
-ul {
-    list-style: none;
-    /*margin: 1em 0 1.5em 1.5em;*/
+/**************************** Global structure **********************/
+
+nav, .featured, .seasonal, footer{
+        width: 90%;
+        max-width: 920px;
+        padding: 1% 1% 0 1%;
+        margin: 0 auto;
 }
-
-li{
-        display: inline-block;
-        vertical-align: top;
-}
-/*dl {margin: 0 0 1.5em 0;}
-dt {font-weight: bold;}
-dd {margin-left: 1.5em;}
-/* Quotes */
-/*blockquote {font-style: italic;}
-cite {}
-q {}*/
-
 
 
 
 /**************************** Header **********************/
 
+/* global */
 header{
     width: 100%;
-    /*background: #DB0D7C;  */
      background: #EEE;
-    margin-bottom: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
-nav, .featured, .seasonal, footer{
-        width: 90%;
-        max-width: 920px;
-        padding: 2% 1% 0 1%;
-        margin: 0 auto;
+nav{
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 nav ul{
-    /*height: 70px;*/
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-nav .item-nav{
-
+    /*width: 100%;*/
 }
 
 nav .nav-btn{
     height: 100%;
-    width: 10%;
-    max-width: 90px;
-    padding: 1px;
-    background: #D40E52;
+    padding: 5px;
+    background: #ff38a9;
     margin-bottom: 10px;
     font-size: 0.8em;
+    position: relative;
+    display: block;
+    float: left;
 }
+    nav .nav-btn:hover{
+        background: #d90484;
+    }
+
+nav a{
+    font-size: 1.1em;
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+    height: 40px;
+    display: inline-block;
+    /*padding: 0 30px;*/
+    line-height: 40px;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+    margin: 0 auto;
+}
+
 nav .nav-btn span{
     margin-top: 40%;
 }
 
+
+/* Main nav */
+nav .main-nav{
+    width: 100%;    
+}
+nav .main-nav:after {
+/*clear: both;
+*/}
+
 nav .title-btn{
-    width: 60%;
-    max-width: 60%;
+    width: 55%;
     background: transparent;
     font-size: 1.286em;
+    float: left;
+
 }
-nav .title-btn a{
-/*    vertical-align: top;*/
-    font-size: 0.8em;
-/*    line-height: 0;*/
+    nav .title-btn:hover{
+        background: transparent;
+    }
+    nav .title-btn hgroup{
+        display: inline;
+        text-align: left;
+    }
+    nav .title-btn h2{
+        font-size: 0.8em;
+    }
+    nav .title-btn img{
+        width: 40px;
+        display: inline;
+        float: left;
+        margin-right: 5px;
+    }
+
+
+nav .menu-btn-nav{
+    float: right;
+    width: 45%;
+    right: 0;
 }
+    nav .menu-btn-nav .nav-btn{
+        padding: 0 1em;
+    }
 
 nav .menu-btn{
     display: none;
 }
 
-nav .item-btn{
+
+/* Item nav */
+
+.item-nav{
     height: 40px;
+/*    overflow: auto;*/
 }
+.item-nav ul{
+    width: 100%;
+}
+
+nav .item-btn{
+    max-width: 12.5%;
+    width: 12.5%;
+    min-width: 10%;
+    /*width: 100%;*/
+/*    padding: 0 0.5em;
+    margin: auto;*/
+ /*   display: inline-block;*/
+}
+
+.item-nav .table-btn{
+    min-width: 105px;
+}
+
+nav li.item-btn a{
+    display: block; 
+}
+
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -173,7 +239,8 @@ nav .item-btn{
         /*max-width: 50%;*/
     }
     nav .item-nav{;
-        width: 100%
+        width: 100%;
+        display: block;
     }
     nav .item-btn{
         width: 22%;
