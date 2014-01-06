@@ -286,12 +286,43 @@ nav li.item-btn a{
 
 .feat-carousel{
     width: 100%;
+    background-color: white;
 }
 
-.featured img{
-    width: 100%;
+/*.featured img{
+    width: 69%;
     min-width: 200px;
     max-width: 900px;
+    position: relative;
+    display: inline-block;
+}*/
+
+.feat-side-menu {
+    height: 399px;
+    width: 30%;
+    background-color: red;
+    display: inline-block;
+}
+
+.feat-img {
+    width: 70%;
+    height: 399px;
+    min-width: 200px;
+    max-width: 900px;
+    display: inline-block;
+    background-color: red;
+    float: right;
+}
+
+.feat-menu-item {
+    height: 133px;
+    width: 100%;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.feat-menu-item:hover {
+    background-color: blue;
 }
 
 
