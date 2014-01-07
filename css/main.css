@@ -30,7 +30,7 @@ html{
 /* Body */
 body {
     /*background: #EEE;*/
-    background: #77CAC8;
+    /*background: #77CAC8;*/
     color: #1A1A1A;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Montserrat', 'Lucida Sans
@@ -94,10 +94,10 @@ em, i {
 
 /**************************** Global structure **********************/
 
-nav, .featured, .seasonal, footer{
+nav, .featured, .seasonal, footer, .search-nav{
         width: 90%;
         max-width: 920px;
-        padding: 1% 1% 0 1%;
+/*        padding: 0;*/
         margin: 0 auto;
 }
 
@@ -113,20 +113,10 @@ header{
     text-align: center;
 }
 
-nav{
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-nav ul{
-    /*width: 100%;*/
-}
-
 nav .nav-btn{
     height: 100%;
     padding: 5px;
     background: #ff38a9;
-    margin-bottom: 10px;
     font-size: 0.8em;
     position: relative;
     display: block;
@@ -158,8 +148,9 @@ nav .nav-btn span{
 
 
 /* Main nav */
-nav .main-nav{
-    width: 100%;    
+nav.main-nav{
+    padding-top: 0.8%;
+    height: 50px;   
 }
 nav .main-nav:after {
 /*clear: both;
@@ -170,18 +161,10 @@ nav .title-btn{
     background: transparent;
     font-size: 1.286em;
     float: left;
-
 }
     nav .title-btn:hover{
         background: transparent;
-    }
-    nav .title-btn hgroup{
-        display: inline;
-        text-align: left;
-    }
-    nav .title-btn h2{
-        font-size: 0.8em;
-    }
+    }   
     nav .title-btn img{
         width: 40px;
         display: inline;
@@ -197,6 +180,8 @@ nav .menu-btn-nav{
 }
     nav .menu-btn-nav .nav-btn{
         padding: 0 1em;
+        background: transparent;
+        float: right;
     }
     nav .menu-btn-nav .icon{
         display:none;
@@ -207,11 +192,38 @@ nav .menu-btn{
 }
 
 
+/* Search nav */
+.search-nav{
+    height: 30px;
+    padding: 0;
+}
+    .search-nav form{
+        float: right;
+        width: 37.5%;
+    }
+    .search-nav input{
+        display: block;
+        width: 100%;
+        height: 25px;
+        padding: 6px 12px;
+        color: #555;
+        vertical-align: middle;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+        -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+
+
+
 /* Item nav */
 
-.item-nav{
+nav.item-nav{
     height: 40px;
-/*    overflow: auto;*/
+
 }
 .item-nav ul{
     width: 100%;
@@ -221,14 +233,11 @@ nav .item-btn{
     max-width: 12.5%;
     width: 12.5%;
     min-width: 10%;
+   
     /*width: 100%;*/
 /*    padding: 0 0.5em;
     margin: auto;*/
  /*   display: inline-block;*/
-}
-
-.item-nav .table-btn{
-    min-width: 105px;
 }
 
 nav li.item-btn a{
@@ -238,6 +247,9 @@ nav li.item-btn a{
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
+    header{
+        padding-bottom: 75px;
+    }
     nav .title-btn{
         /*max-width: 50%;*/
     }
@@ -246,8 +258,9 @@ nav li.item-btn a{
         display: block;
     }
     nav .item-btn{
-        width: 22%;
-        max-width: 22%;
+        width: 25%;
+        max-width: 25%;
+         margin-bottom: 3px;
     }
 }
 
@@ -268,9 +281,6 @@ nav li.item-btn a{
         display: block;
         width: 100%;
         text-align: center;
-    }
-    nav .title-btn h2 {
-        display: none;
     }
     .item-nav{
         display: none;
@@ -312,7 +322,7 @@ nav li.item-btn a{
 }
 
 .feat-img {
-    width: 70%;
+    width: 69%;
     height: 399px;
     min-width: 200px;
     max-width: 900px;
