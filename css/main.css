@@ -95,7 +95,7 @@ em, i {
 
 /**************************** Global structure **********************/
 
-nav, .featured, .seasonal, footer, .search-nav{
+nav, .featured, .seasonal, .rassurance, .bottom, .search-nav{
         width: 90%;
         max-width: 920px;
         margin: 0 auto;
@@ -471,23 +471,156 @@ nav li.item-btn a{
 }
 
 
+/**************************** exemple justify **********************/
+
+
 
 
 
 
 /**************************** Seasonal **********************/
 
+
 .seasonal{
-    display: inline;
+    margin-top: 3em;
+}
+
+/* -- DEFAULTS -- */
+
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* -- FLUID GRID STYLES -- */
+
+#Grid{
+  margin-bottom: 40px;
+  text-align: justify;
+  font-size: 2em;
+  color: black;
+}
+
+#Grid li{
+  display: inline-block;
+  background: #ccc;
+  color: black;
+  border:solid;
+  width: 31%;
+  padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
+  padding-top: 0px;
+  padding-bottom: 1.5%;
+  margin-bottom: 3.5%;
+  text-align: center;
+}
+
+
+#Grid:after{
+  content: ''; 
+  display: inline-block;
+  width: 100%;
+/*  border-top: 10px dashed #922d8d;  Border added to make element visible for demonstration purposes */
+}
+
+/*#Grid .placeholder{
+  padding: 0;
+  border-top: 10px solid #922d8d;  Border added to make element visible for demonstration purposes 
+}*/
+
+
+#Grid .violet{
+    background-color: #d90484;
+}
+
+#Grid .jaune{
+    background-color: #f5ab00;
+}
+
+#Grid .vert{
+    background-color: #85b82e;
+}
+
+#Grid .bleu{
+    background-color: #008dd4;
+}
+
+#Grid header{
+    height: 34px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+
+#Grid  img{
+    max-height: 125px;
+    max-height: 125px;
+    background-color: whites;
+}
+
+#Grid li p{
+    font-size: 55%;
+    text-align: left;
+}
+
+#Grid .bandeau{
+    width: 85%;
+    height: 40px;  
+    margin-top: 20px;
+    text-align: left;
+    line-height: 70%;
+}
+
+
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #Grid li{
+    width: 31%;
+    /*padding-top: 1%;*/
+    margin-bottom: 3%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Grid li{
+    width: 48%;
+    /*padding-top: 1%;*/
+    margin-bottom: 4%;
+  }
+}
+
+
+/***** OLD *********/
+
+
+.seasonal a{
+    padding: 0px;
 }
 /***** Item *********/
+
 .seasonal ul{
-    width: 100%;
+    text-align:jusitify;
 }
 
 .seasonal ul li{
     display: inline-block;
+	text-align:left;
 }
+
+.seasonal .item-container2{
+    background: #888;
+    padding: 5px;
+    height: 160px;
+    overflow: auto;
+    width: 160px;
+    text-align: center;
+}
+
 
 
 .seasonal .item-container{
@@ -496,7 +629,8 @@ nav li.item-btn a{
     height: 160px;
     overflow: auto;
     width: 160px;
-    margin: 2em;
+	/* margin: 2em; */
+	
     text-align: center;
 }
 
@@ -509,84 +643,12 @@ nav li.item-btn a{
     max-height: 95px;
 }
 
-.seasonal header{
-    background-color: transparent;
-    margin: 0px;
-    padding: 0px 0px 15px 0px;
-}
-
-/* Adaptation tablettes */
-@media screen and (min-width: 480px) and (max-width: 768px) {
-    .seasonal{
-        width: 100%;
-        margin: 0px;
-    }
-}
-
-
-
-/* Adaptation smartphone */
-@media screen and (max-width: 480px) {
-
-    #test p{
-        font-size: 2em;
-        border: solid;
-        background-color: pink;
-        height: 90px;
-        vertical-align: middle;
-        text-align: center;
-    }
-
-    
-    .seasonal{
-        width: 100%;
-    }
-
-    a:link{
-        padding: 0px;
-    }
-
-    .seasonal li{
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .seasonal li article {
-        vertical-align: center;
-    }
-
-    .seasonal .item-container{
-        height: 45px;
-        width: 100%;
-        display: block;
-        margin: 0em;
-        border: solid black;
-        border-width: 3px;
-    }
-
-    .seasonal .item-container header{
-        margin: 0px;
-        padding: 0px;
-        vertical-align: bottom;
-        position: absolute;
-    }
-    
-    .seasonal img{
-        display: none;
-    }
-
-    .seasonal .item-details{
-        display: none;
-    }
-}
 
 /**************************** Footer **********************/
 
 
 /***** Rassurance *********/
 .rassurance{
-    background: #77CAC8;
     text-align: center;
     padding: 0.5em;
     font-size: 1em;
@@ -598,15 +660,15 @@ nav li.item-btn a{
     width: 23%;
     height: 6em;
     border: solid;
-    vertical-align: center;
+    text-align: center;
     background-color: white;
+    display: inline-block;
 }
 
 
 /***** sitemap *********/
 .reseaux-sociaux{
     text-align: center;
-    background: #77CAC8;
     padding: 0.5em;
 }
 
@@ -616,6 +678,7 @@ nav li.item-btn a{
     border: solid;
     margin: 2%;
     background-color: pink;
+    display: inline-block;
 
 }
 
@@ -624,13 +687,19 @@ footer{
     padding: 0px;
     margin: 2em auto;
     margin-bottom: 0px;
-    background: grey;
     font-size: 1em;
+    background-color: #EEE;
+    border: solid;
+    text-align: left;
+
 }
 
 footer .bottom{
     text-align: center;
+    max-width: 920px;
+    
 }
+
 
 footer article{
     width: 21%;
