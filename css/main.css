@@ -48,7 +48,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Headings */
-h1 {font-size: 1.571em;
+h1 {
+    font-size: 1.571em;
     font-weight: bold;} /* 22px*/
 h2 { font-size: 1.286em;    } /* 18px*/
 h3 {font-size: 1em} /* 14px */
@@ -97,10 +98,34 @@ em, i {
 nav, .featured, .seasonal, footer, .search-nav{
         width: 90%;
         max-width: 920px;
-/*        padding: 0;*/
         margin: 0 auto;
 }
 
+/* Colors */
+.pink{
+    background: #ff38a9;
+}
+.pink:hover{
+    background: #d90484;
+}
+.yellow{
+    background: #ffcf30;
+}
+.yellow:hover{
+    background: #f5ab00;
+}
+.green{
+    background: #b4e35d;
+}
+.green:hover{
+    background: #85b82e;
+}
+.blue{
+    background: #30c1ff;
+}
+.blue:hover{
+    background: #008dd4;
+}
 
 
 /**************************** Header **********************/
@@ -109,32 +134,28 @@ nav, .featured, .seasonal, footer, .search-nav{
 header{
     width: 100%;
      background: #EEE;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 nav .nav-btn{
     height: 100%;
     padding: 5px;
-    background: #ff38a9;
     font-size: 0.8em;
     position: relative;
     display: block;
     float: left;
 }
-    nav .nav-btn:hover{
-        background: #d90484;
-    }
 
 nav a{
     font-size: 1.1em;
     color: white;
     font-weight: 400;
     font-style: italic;
-    height: 40px;
+    height: 30px;
     display: inline-block;
-    /*padding: 0 30px;*/
-    line-height: 40px;
+    line-height: 30px;
     -webkit-transition: all 0.15s ease;
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
@@ -146,36 +167,37 @@ nav .nav-btn span{
     margin-top: 40%;
 }
 
-
-/* Main nav */
+/****** Main nav ******/
 nav.main-nav{
-    padding-top: 0.8%;
+    padding-top: 1%;
     height: 50px;   
 }
 nav .main-nav:after {
 /*clear: both;
 */}
 
+/* title nav */
 nav .title-btn{
-    width: 55%;
-    background: transparent;
+    width: 45%;
     font-size: 1.286em;
     float: left;
+    text-align: left;
 }
-    nav .title-btn:hover{
-        background: transparent;
-    }   
     nav .title-btn img{
         width: 40px;
         display: inline;
         float: left;
         margin-right: 5px;
     }
+    nav .title-btn:hover{
+        color: #969696;
+    }
 
 
+/* menu btn nav */
 nav .menu-btn-nav{
     float: right;
-    width: 45%;
+    width: 55%;
     right: 0;
 }
     nav .menu-btn-nav .nav-btn{
@@ -184,12 +206,39 @@ nav .menu-btn-nav{
         float: right;
     }
     nav .menu-btn-nav .icon{
-        display:none;
+        /*display:none;*/
     }
-
-nav .menu-btn{
-    display: none;
-}
+    nav .menu-btn-nav .search-btn:hover a, nav .menu-btn-nav .tel-btn:hover a, nav .menu-btn-nav .menu-btn:hover a{
+        color: #969696;
+    }
+    nav .menu-btn-nav .basket-btn{
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        display: inline-block;
+        padding: 1px 5px;
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: normal;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid #969696;
+        /*border-radius: 3px;*/
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+    }
+        nav .menu-btn-nav .basket-btn:hover{
+            color: #fff;
+            background-color: #30c1ff;
+            border-color: #008dd4;
+        }
+    nav .menu-btn-nav .menu-btn{
+        display: none;
+    }
 
 
 /* Search nav */
@@ -217,29 +266,19 @@ nav .menu-btn{
         transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     }
 
-
-
 /* Item nav */
 
 nav.item-nav{
     height: 40px;
-
 }
-.item-nav ul{
+nav.item-nav ul{
     width: 100%;
 }
-
 nav .item-btn{
     max-width: 12.5%;
     width: 12.5%;
     min-width: 10%;
-   
-    /*width: 100%;*/
-/*    padding: 0 0.5em;
-    margin: auto;*/
- /*   display: inline-block;*/
 }
-
 nav li.item-btn a{
     display: block; 
 }
@@ -248,56 +287,123 @@ nav li.item-btn a{
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
     header{
-        padding-bottom: 75px;
+        padding-bottom: 55px;
     }
     nav .title-btn{
-        /*max-width: 50%;*/
+        width: 57%;
     }
-    nav .item-nav{;
+        nav .title-btn h1 {
+            font-size: 1.2em;    
+        }
+    .search-nav form{
         width: 100%;
-        display: block;
     }
+    nav .menu-btn-nav{
+        width: 43%;
+    }
+    nav .menu-btn-nav .nav-btn{
+        padding: 0;
+    }
+    nav .nav-btn .nav-text{
+        display: none;
+    }
+    nav .nav-btn [class^="icon-"]:before, [class*=" icon-"]:before{
+        font-size: 1.7em;
+    }
+    nav .menu-btn-nav .basket-btn{
+        width: auto;
+        margin-left: 8px;
+    }
+        nav .menu-btn-nav .basket-btn .nb-prod,  nav .menu-btn-nav .basket-btn .nb-euro{
+            font-size: 1.4em;
+        }
     nav .item-btn{
         width: 25%;
         max-width: 25%;
-         margin-bottom: 3px;
+        margin-bottom: 3px;
     }
 }
 
 
-
 /* Adaptation smartphone */
 @media screen and (max-width: 480px) {
-    nav .nav-btn{
-        width: 20%;
-        margin: 0 auto;
-        padding: 0.2em;
-        height: 100%;
-    }
-    nav .nav-btn .nav-text{
-        display: none;
+    header{
+        padding-bottom: 60px;
+        }
+    nav a{
+        line-height: 22px;
+    }    
+    header nav .main-nav{
+        /*height: 100px;*/
     }
     nav .title-btn{
         display: block;
         width: 100%;
         text-align: center;
     }
-    .item-nav{
+    nav .menu-btn-nav{
+        width: 100%;
+        margin: 20px 0 15px 0;
+        background: #ccc;
+    }
+        nav .menu-btn-nav .nav-btn{
+            width: 25%;
+            margin: 0 auto;
+            padding: 0.2em;
+            height: 68px;
+        }
+        nav .menu-btn-nav .nav-btn:hover a{
+            color: #fff;
+        }
+            nav .menu-btn-nav .nav-btn .icon{
+                display: block;
+            }
+            nav .nav-btn [class^="icon-"]:before, [class*=" icon-"]:before{
+                font-size: 3.3em;
+                width: 100%;
+                margin: 0;
+            }
+            nav .menu-btn-nav .basket-btn{
+                padding-bottom: 7px;
+            }
+                nav .menu-btn-nav .basket-btn .icon{
+                    margin-top: 3%;
+                }
+                nav .menu-btn-nav .basket-btn [class^="icon-"]:before, [class*=" icon-"]:before{
+                    font-size: 3em;
+                }
+                nav .menu-btn-nav .basket-btn .nb-prod,  nav .menu-btn-nav .basket-btn .nb-euro{
+                    font-size: 1.2em;
+                }
+            nav .menu-btn-nav .menu-btn:hover{
+                background: #ff38a9;
+            }
+            nav .menu-btn-nav .tel-btn:hover{
+                background: #ffcf30;
+            }
+            nav .menu-btn-nav .search-btn:hover{
+                background: #b4e35d;
+            }
+            nav .menu-btn-nav .nav-btn .nav-text{
+                display: none;
+            }
+            nav .menu-btn-nav .menu-btn{
+                display: block;
+            }
+
+    .search-nav{
+        margin-top: 30px;
+    }
+        .search-nav form{
+            width: 100%;
+            float: none;
+            margin: 0;
+        }
+    nav.item-nav{
         display: none;
     }
-    nav .menu-btn{
-        display: inline-block;
-    }
-    nav .menu-btn-nav .icon{
-        display: block;
-    }
-    nav .nav-btn [class^="icon-"]:before, [class*=" icon-"]:before{
-        font-size: 3.3em;
-        width: 100%;
-        /*height: 100%;*/
-        margin: 0;
-        
-    }
+    
+
 }
 /**************************** Featured **********************/
 
