@@ -95,7 +95,7 @@ em, i {
 
 /**************************** Global structure **********************/
 
-nav, .featured, .seasonal, .rassurance, .bottom, .search-nav{
+nav, .featured, .seasonal, .rassurance, .bottom, .search-nav, .menu-drop-down{
         width: 90%;
         max-width: 920px;
         margin: 0 auto;
@@ -282,6 +282,27 @@ nav .item-btn{
 nav li.item-btn a{
     display: block; 
 }
+
+
+/* menu drop down */
+
+.menu-drop-down{
+/*    background: #ff38a9;*/
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+    height: auto;
+    display: none;
+}
+    .menu-drop-down .col{
+        width: 25%;
+        display: inline-block;
+    }
+        .menu-drop-down .col a{
+            font-size: 0.9em;
+            line-height: 1.1em;
+        }
+
 
 
 /* Adaptation tablettes */
