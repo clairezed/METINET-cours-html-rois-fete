@@ -18,6 +18,10 @@
         });
     }
     
+    $('.menu-btn').on('click', function(){
+        $(this).toggleClass("active");
+        $('.mobile-item-nav').slideToggle();
+      })
     
 
 })

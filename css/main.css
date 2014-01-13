@@ -401,14 +401,24 @@ nav .item-btn{
 /* Adaptation smartphone */
 @media screen and (max-width: 480px) {
     header{
-        padding-bottom: 60px;
+        /*padding-bottom: 60px;*/
         height: auto;
         }
+    header:after{
+        clear: both;
+        content: "";
+        display: block;
+    }
     nav a{
         line-height: 22px;
     }    
-    header nav .main-nav{
-        /*height: 100px;*/
+    header nav.main-nav{
+        height: auto;
+    }
+    header nav.main-nav:after{
+        clear: both;
+        content: "";
+        display: block;
     }
     nav .title-btn{
         display: block;
@@ -417,7 +427,7 @@ nav .item-btn{
     }
     nav .menu-btn-nav{
         width: 100%;
-        margin: 20px 0 15px 0;
+        margin: 20px 0 0px 0;
         background: #ccc;
     }
         nav .menu-btn-nav .nav-btn{
@@ -426,7 +436,7 @@ nav .item-btn{
             padding: 0.2em;
             height: 68px;
         }
-        nav .menu-btn-nav .nav-btn:hover a{
+        nav .menu-btn-nav .nav-btn:hover a, nav .menu-btn-nav .nav-btn.active a{
             color: #fff;
         }
             nav .menu-btn-nav .nav-btn .icon{
@@ -449,7 +459,7 @@ nav .item-btn{
                 nav .menu-btn-nav .basket-btn .nb-prod,  nav .menu-btn-nav .basket-btn .nb-euro{
                     font-size: 1.2em;
                 }
-            nav .menu-btn-nav .menu-btn:hover{
+            nav .menu-btn-nav .menu-btn:hover, nav .menu-btn-nav .menu-btn.active{
                 background: #ff38a9;
             }
             nav .menu-btn-nav .tel-btn:hover{
@@ -465,25 +475,28 @@ nav .item-btn{
                 display: block;
             }
 
-    .search-nav{
-        margin-top: 30px;
+    .search-nav form{
+        width: 100%;
+        float: none;
+        margin: 5px 0;
     }
-        .search-nav form{
-            width: 100%;
-            float: none;
-            margin: 0;
-        }
     nav.item-nav{
         display: none;
-        /*display: block;*/
+    }
+    nav.mobile-item-nav{
+        display: none;
         width: 90%;
         height: auto;
     }
-        nav.item-nav ul{
-/*            display: block;*/
+     nav.mobile-item-nav:after{
+        clear: both;
+        content: "";
+        display: block;
+    }
+        nav.mobile-item-nav ul{
             width: 100%;
         }
-        nav.item-nav li{
+        nav.mobile-item-nav li{
             width: auto;
             max-width: 100%;
             min-width:100%;
