@@ -508,23 +508,16 @@ nav .item-btn{
 }
 /**************************** Featured **********************/
 
-.feat-container {
-    /*max-height: 400px;*/
-}
-
 .feat-carousel{
     width: 100%;
     min-width: 200px;
-    max-width: 900px;
     background-color: white;
     float: left;
     overflow: hidden;
 }
 
 .feat-side-menu {
-    /*height: 400px;*/
     width: 100%;
-    /*background: #ff38a9;*/
     display: inline-block;
     float: left;
 }
@@ -537,31 +530,24 @@ nav .item-btn{
 .feat-img {
     width: 100%;
     max-height: 400px;
-    /*height: 100%;*/
     display: inline-block;
     background-color: red;
     float: left;
 }
 
-/*.feat-img img {
-    height: 100%;
-}*/
 
 .feat-menu-item {
-    /*height: 33.3333%;*/
     width: 100%;
-    background: #ff38a9;
+    /*background: #ff38a9;*/
     display: inline-block;
     text-align: center;
-/*    padding-top: 15%;
-    padding-bottom: 15%;*/
     padding: auto;
     
 }
 
-.feat-menu-item:hover {
+/*.feat-menu-item:hover {
     background-color: #d90484;
-}
+}*/
 
 .feat-menu-item a {
     font-size: 1.1em;
@@ -576,6 +562,21 @@ nav .item-btn{
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
     margin: 0 auto;
+}
+
+/* Responsive */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .feat-side-menu li {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feat-side-menu li {
+        width: 100%;
+        float: left;
+    }
 }
 
 
