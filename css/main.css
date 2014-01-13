@@ -428,8 +428,15 @@ nav li.item-btn a{
 }
 /**************************** Featured **********************/
 
+.feat-container {
+    height: 100%;
+}
+
 .feat-carousel{
     width: 100%;
+    height: 100%;
+    min-height: 200px;
+    max-height: 900px;
     background-color: white;
 }
 
@@ -442,18 +449,22 @@ nav li.item-btn a{
 }*/
 
 .feat-side-menu {
-    height: 399px;
+    height: 100%;
     width: 30%;
     /*background: #ff38a9;*/
     display: inline-block;
 }
 
+.feat-side-menu ul {
+    height: 100%;
+}
+
 .feat-img {
     width: 69%;
-    height: 399px;
+    height: 100%;
     min-width: 200px;
     max-width: 900px;
-    display: inline-block;
+    /*display: inline-block;*/
     background-color: red;
     float: right;
 }
@@ -464,12 +475,20 @@ nav li.item-btn a{
 }
 
 .feat-menu-item {
-    height: 133px;
+    height: 33.3333%;
+    min-height: 50px;
     width: 100%;
     background: #ff38a9;
     display: inline-block;
     text-align: center;
-    padding-top: 45px;
+/*    padding-top: 15%;
+    padding-bottom: 15%;*/
+    padding: auto;
+    
+}
+
+.feat-menu-item p {
+    vertical-align: middle;
 }
 
 .feat-menu-item:hover {
