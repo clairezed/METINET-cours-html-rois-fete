@@ -581,7 +581,7 @@ div, ul, li{
 /* -- FLUID GRID STYLES -- */
 
 #Grid{
-  margin-bottom: 40px;
+  margin: 0px;
   text-align: justify;
   font-size: 2em;
   color: black;
@@ -666,7 +666,7 @@ div, ul, li{
 
 /* Adaptation tablettes */
 @media screen and (min-width: 768px) {
-		
+        
 
     #Grid header{
         width: 99.5%;
@@ -677,37 +677,37 @@ div, ul, li{
         font-size: 25px;
         height: 42px;
         line-height: 42px;    }
-	
-	.titre-long{
-		font-size: 20px;
-		line-height: 20px;
-	}	
+    
+    .titre-long{
+        font-size: 20px;
+        line-height: 20px;
+    }   
 
 }
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
-		
+        
     #Grid li{
     width: 48%;
     /*padding-top: 1%;*/
     margin-bottom: 4%;
-    }	
+    }   
 
     #Grid .bandeau{
     display: none;
-	}
+    }
 
     #Grid header{
         height: 10px;
         margin: 0px;
         padding-bottom: 30px;
     }
-	
-	.titre-long{
-		font-size: 13px;
-		line-height: 10px;
-	}	
+    
+    .titre-long{
+        font-size: 13px;
+        line-height: 10px;
+    }   
 
 }
 
@@ -721,9 +721,9 @@ div, ul, li{
     margin-bottom: 4%;
   }
 
-	#Grid .bandeau{
+    #Grid .bandeau{
     display: none;
-	}
+    }
 
     #Grid header{
         height: 10px;
@@ -735,9 +735,24 @@ div, ul, li{
     .titre-long{
         font-size: 13px;
     }
+
+
   
 }
 
+@media (max-width: 480px){
+  
+    #Grid  img{
+    max-height: 100px;
+    max-height: 100px;
+    background-color: whites;
+    }
+
+    #Grid {
+        margin: 0px;
+    }
+  
+}
 
 /***** Rassurance *********/
 
@@ -746,6 +761,7 @@ div, ul, li{
   text-align: justify;
   font-size: 2em;
   color: black;
+  padding-bottom: 0px;
 }
 
 #rassurance li{
@@ -805,7 +821,7 @@ div, ul, li{
       display: inline-block;
       color: black;
       border:solid;
-      width: 40%;
+      width: 47%;
       padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
       padding-bottom: 1.5%;
       margin-bottom: 1em;
@@ -821,12 +837,24 @@ div, ul, li{
   
 }
 
+@media (max-width: 480px){
+    
+    .icon-credit-card, .icon-truck, .icon-thumbs-up, .icon-headphones, .icon-facebook, .icon-twitter, .icon-mail {
+     font-size: 1em;
+    }
+
+    #rassurance li{
+      font-size: 10px;
+
+    }
+
+}
 
 /***** reseaux-sociaux *********/
 .reseaux-sociaux{
     text-align: center;
     padding: 0.5em;
-	margin: 0px;
+    margin: 0px;
 }
 
 .reseaux-sociaux li{
@@ -838,11 +866,11 @@ div, ul, li{
 }
 
 .reseaux-sociaux a{
-	color: #aa;
+    color: #aa;
 }
 
 .reseaux-sociaux a:hover{
-	color: blue;
+    color: blue;
 }
 
 /* Adaptation tablettes */
@@ -852,18 +880,14 @@ div, ul, li{
 
 }
 
-@media (max-width: 600px){
-  
 
-  
-}
 
 /**************************** Footer **********************/
 
 footer{
     padding: 0px;
     margin-bottom: 0px;
-	margin-top: 0px;
+    margin-top: 0px;
     font-size: 1em;
     background-color: #EEE;
     border-top: solid;
@@ -878,8 +902,8 @@ footer .bottom{
 }
 
 .bottom header{
-	font-size: 20px;
-	text-decoration: underline;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 footer article{
@@ -891,7 +915,11 @@ footer article{
 }
 
 footer a:hover{
-	color: black;
+    color: white;
+}
+
+footer li:hover {
+    background-color: #d90484;
 }
 
 footer article ul li {
