@@ -293,6 +293,9 @@ nav .item-btn{
     nav li.item-btn a{
         display: block; 
     }
+.mobile-item-nav{
+    display: none;
+}
 
 
 /* menu drop down */
@@ -484,7 +487,7 @@ nav .item-btn{
         display: none;
     }
     nav.mobile-item-nav{
-        display: none;
+        /*display: none;*/
         width: 90%;
         height: auto;
     }
