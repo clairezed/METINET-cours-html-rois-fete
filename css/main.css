@@ -287,20 +287,54 @@ nav li.item-btn a{
 /* menu drop down */
 
 .menu-drop-down{
-/*    background: #ff38a9;*/
-    padding: 10px;
+    /*padding: 10px;*/
     text-align: left;
     overflow: hidden;
     height: auto;
     display: none;
-}
-    .menu-drop-down .col{
-        width: 25%;
-        display: inline-block;
+}   
+    .menu-drop-down#disguise-menu, .menu-drop-down.makeup{
+        background-color: #ff38a9;
     }
-        .menu-drop-down .col a{
+        .menu-drop-down#disguise-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        background-color: #d90484;
+        }
+    .menu-drop-down#accessory-menu, .menu-drop-down.decoration{
+        background-color: #ffcf30;
+    }
+        .menu-drop-down#accessory-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
+            background-color: #f5ab00;
+        }
+    .menu-drop-down .col{
+        width: 22%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px;
+    }
+        .menu-drop-down  a{
             font-size: 0.9em;
             line-height: 1.1em;
+            color: #444;
+        }
+        .menu-drop-down a:hover{
+            color: #EEE;
+        }
+    .menu-drop-down .footer-menu{
+        width: 100%;
+        display: inline-block;
+        padding: 10px;
+    }
+        .menu-drop-down .footer-menu p{
+            display: inline;
+            color: #666;
+            font-style: italic;
+        }
+        .menu-drop-down .footer-menu p:hover{
+            color: #EEE;
+        }
+        .menu-drop-down .footer-menu span{
+            font-size: 16px;
+            float: right;
         }
 
 
