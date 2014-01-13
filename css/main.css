@@ -268,26 +268,29 @@ nav .menu-btn-nav{
 
 /* Item nav */
 
+.item-part{
+    width: 100%;
+}
+
 nav.item-nav{
     height: 40px;
 }
-nav.item-nav ul{
-    width: 100%;
-}
+    nav.item-nav ul{
+        width: 100%;
+    }
 nav .item-btn{
     max-width: 12.5%;
     width: 12.5%;
     min-width: 10%;
 }
-nav li.item-btn a{
-    display: block; 
-}
+    nav li.item-btn a{
+        display: block; 
+    }
 
 
 /* menu drop down */
 
 .menu-drop-down{
-    /*padding: 10px;*/
     text-align: left;
     overflow: hidden;
     height: auto;
@@ -311,13 +314,18 @@ nav li.item-btn a{
         vertical-align: top;
         margin: 10px;
     }
-        .menu-drop-down  a{
+        .menu-drop-down a{
             font-size: 0.9em;
             line-height: 1.1em;
             color: #444;
         }
         .menu-drop-down a:hover{
             color: #EEE;
+        }
+        .menu-drop-down h3{
+            font-size: 1.1em;
+            line-height: 1.1em;
+            font-weight: bold;
         }
     .menu-drop-down .footer-menu{
         width: 100%;
@@ -326,7 +334,7 @@ nav li.item-btn a{
     }
         .menu-drop-down .footer-menu p{
             display: inline;
-            color: #666;
+            color: #DDD;
             font-style: italic;
         }
         .menu-drop-down .footer-menu p:hover{
@@ -376,6 +384,9 @@ nav li.item-btn a{
         width: 25%;
         max-width: 25%;
         margin-bottom: 3px;
+    }
+     .menu-drop-down .col{
+        width: 44%;
     }
 }
 
