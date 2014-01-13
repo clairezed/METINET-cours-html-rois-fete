@@ -23,6 +23,10 @@
       $(this).addClass('feat-selected');
     })
     
+    $('.menu-btn').on('click', function(){
+        $(this).toggleClass("active");
+        $('.mobile-item-nav').slideToggle();
+      })
     
 
 })
