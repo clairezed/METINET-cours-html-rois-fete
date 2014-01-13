@@ -17,6 +17,11 @@
 
         });
     }
+
+    $('.feat-menu-item').click(function() {
+      $('.feat-menu-item').removeClass('feat-selected');
+      $(this).addClass('feat-selected');
+    })
     
     $('.menu-btn').on('click', function(){
         $(this).toggleClass("active");
