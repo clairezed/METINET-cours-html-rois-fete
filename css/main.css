@@ -275,26 +275,29 @@ nav .menu-btn-nav{
 
 /* Item nav */
 
+.item-part{
+    width: 100%;
+}
+
 nav.item-nav{
     height: 40px;
 }
-nav.item-nav ul{
-    width: 100%;
-}
+    nav.item-nav ul{
+        width: 100%;
+    }
 nav .item-btn{
     max-width: 12.5%;
     width: 12.5%;
     min-width: 10%;
 }
-nav li.item-btn a{
-    display: block; 
-}
+    nav li.item-btn a{
+        display: block; 
+    }
 
 
 /* menu drop down */
 
 .menu-drop-down{
-    /*padding: 10px;*/
     text-align: left;
     overflow: hidden;
     height: auto;
@@ -318,13 +321,18 @@ nav li.item-btn a{
         vertical-align: top;
         margin: 10px;
     }
-        .menu-drop-down  a{
+        .menu-drop-down a{
             font-size: 0.9em;
             line-height: 1.1em;
             color: #444;
         }
         .menu-drop-down a:hover{
             color: #EEE;
+        }
+        .menu-drop-down h3{
+            font-size: 1.1em;
+            line-height: 1.1em;
+            font-weight: bold;
         }
     .menu-drop-down .footer-menu{
         width: 100%;
@@ -333,7 +341,7 @@ nav li.item-btn a{
     }
         .menu-drop-down .footer-menu p{
             display: inline;
-            color: #666;
+            color: #DDD;
             font-style: italic;
         }
         .menu-drop-down .footer-menu p:hover{
@@ -383,6 +391,9 @@ nav li.item-btn a{
         width: 25%;
         max-width: 25%;
         margin-bottom: 3px;
+    }
+     .menu-drop-down .col{
+        width: 44%;
     }
 }
 
@@ -565,7 +576,7 @@ div, ul, li{
 /* -- FLUID GRID STYLES -- */
 
 #Grid{
-  margin-bottom: 40px;
+  margin: 0px;
   text-align: justify;
   font-size: 2em;
   color: black;
@@ -650,7 +661,7 @@ div, ul, li{
 
 /* Adaptation tablettes */
 @media screen and (min-width: 768px) {
-		
+        
 
     #Grid header{
         width: 99.5%;
@@ -661,37 +672,37 @@ div, ul, li{
         font-size: 25px;
         height: 42px;
         line-height: 42px;    }
-	
-	.titre-long{
-		font-size: 20px;
-		line-height: 20px;
-	}	
+    
+    .titre-long{
+        font-size: 20px;
+        line-height: 20px;
+    }   
 
 }
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
-		
+        
     #Grid li{
     width: 48%;
     /*padding-top: 1%;*/
     margin-bottom: 4%;
-    }	
+    }   
 
     #Grid .bandeau{
     display: none;
-	}
+    }
 
     #Grid header{
         height: 10px;
         margin: 0px;
         padding-bottom: 30px;
     }
-	
-	.titre-long{
-		font-size: 13px;
-		line-height: 10px;
-	}	
+    
+    .titre-long{
+        font-size: 13px;
+        line-height: 10px;
+    }   
 
 }
 
@@ -705,9 +716,9 @@ div, ul, li{
     margin-bottom: 4%;
   }
 
-	#Grid .bandeau{
+    #Grid .bandeau{
     display: none;
-	}
+    }
 
     #Grid header{
         height: 10px;
@@ -719,9 +730,24 @@ div, ul, li{
     .titre-long{
         font-size: 13px;
     }
+
+
   
 }
 
+@media (max-width: 480px){
+  
+    #Grid  img{
+    max-height: 100px;
+    max-height: 100px;
+    background-color: whites;
+    }
+
+    #Grid {
+        margin: 0px;
+    }
+  
+}
 
 /***** Rassurance *********/
 
@@ -730,6 +756,7 @@ div, ul, li{
   text-align: justify;
   font-size: 2em;
   color: black;
+  padding-bottom: 0px;
 }
 
 #rassurance li{
@@ -789,7 +816,7 @@ div, ul, li{
       display: inline-block;
       color: black;
       border:solid;
-      width: 40%;
+      width: 47%;
       padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
       padding-bottom: 1.5%;
       margin-bottom: 1em;
@@ -805,12 +832,24 @@ div, ul, li{
   
 }
 
+@media (max-width: 480px){
+    
+    .icon-credit-card, .icon-truck, .icon-thumbs-up, .icon-headphones, .icon-facebook, .icon-twitter, .icon-mail {
+     font-size: 1em;
+    }
+
+    #rassurance li{
+      font-size: 10px;
+
+    }
+
+}
 
 /***** reseaux-sociaux *********/
 .reseaux-sociaux{
     text-align: center;
     padding: 0.5em;
-	margin: 0px;
+    margin: 0px;
 }
 
 .reseaux-sociaux li{
@@ -822,11 +861,11 @@ div, ul, li{
 }
 
 .reseaux-sociaux a{
-	color: #aa;
+    color: #aa;
 }
 
 .reseaux-sociaux a:hover{
-	color: blue;
+    color: blue;
 }
 
 /* Adaptation tablettes */
@@ -836,18 +875,14 @@ div, ul, li{
 
 }
 
-@media (max-width: 600px){
-  
 
-  
-}
 
 /**************************** Footer **********************/
 
 footer{
     padding: 0px;
     margin-bottom: 0px;
-	margin-top: 0px;
+    margin-top: 0px;
     font-size: 1em;
     background-color: #EEE;
     border-top: solid;
@@ -862,8 +897,8 @@ footer .bottom{
 }
 
 .bottom header{
-	font-size: 20px;
-	text-decoration: underline;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 footer article{
@@ -875,7 +910,11 @@ footer article{
 }
 
 footer a:hover{
-	color: black;
+    color: white;
+}
+
+footer li:hover {
+    background-color: #d90484;
 }
 
 footer article ul li {

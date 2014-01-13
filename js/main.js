@@ -1,41 +1,55 @@
    $(document).ready(function() {
 
-      // $(".menu-drop-down").each(function() {
-      //   console.log( $(this).height())
-      //   $.data(this, "realHeight", $(this).height());
-      // }).css({ display:"none"  });
-      
-
-      // $( ".item-btn").on("mouseenter", function(){
-      //      var div = $(".menu-drop-down");
-      //       console.log( div.data("realHeight"))
-      //     // div.toggle(function() {
-      //       div.animate({ height: div.data("realHeight") }, 600);
-      // //     }, function() {
-      // //       div.animate({ height: 0 }, 600);
-      // //     }); 
-      // });
-
-
-    $('.item-btn').mouseenter(function () {
-      var color = $(this).css('background-color');
-      console.log(color);
-      var type = $(this).children('a').attr('class');
-      console.log(type);  
-
-      $('.menu-drop-down').slideUp();
-        $("#"+ type+"-menu")
-          // .css({backgroundColor: color})
-          .slideDown();
-     }
-    );
-
-    $('.menu-drop-down').on('mouseleave', function(){
-      $(this).slideUp();
-    })
-
     $('.close-menu').on('click', function(){
       $('.menu-drop-down').slideUp();
     })
+
+    // jquery for desktop
+    if(window.matchMedia("(min-width:768px)").matches){
+
+      // need to identify cursor presence on dropdown menu or navigation item menu
+        var count=0; 
+        $('.item-btn').mouseenter(function () {
+          count=0
+          count++;
+          // $('.item-btn').css('color', '#333')
+          // $(this).css('color', '#FFF')
+          // var color = $(this).css('background-color');
+          var type = $(this).children('a').attr('class');
+
+          $('.menu-drop-down').slideUp();
+            $("#"+ type+"-menu")
+              // .css({backgroundColor: color})
+            .slideDown();
+        });
+
+        $('.menu-drop-down').mouseenter(function () {
+          count++;
+        });
+        
+        $('.menu-drop-down, .item-nav').mouseleave(function(){
+            count--;
+            setTimeout(function(){
+                if (count==0){
+                        $('.menu-drop-down').slideUp();
+                    }
+            },50);
+        });
+    }
+
+
+    // jquery for tablette
+    if(window.matchMedia("(max-width:768px)").matches){
+
+       $('.item-btn').on('click', function () {
+          var type = $(this).children('a').attr('class');
+          
+          $('.menu-drop-down').not($("#"+ type+"-menu")).slideUp();
+          $("#"+ type+"-menu").slideToggle();
+
+        });
+    }
+    
+    
 
 })
