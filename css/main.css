@@ -596,11 +596,11 @@ nav .item-btn{
 
 /* -- DEFAULTS -- */
 
-div, ul, li{
+/*div, ul, li{
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
+}*/
 
 /* -- FLUID GRID STYLES -- */
 
@@ -615,7 +615,6 @@ div, ul, li{
   display: inline-block;
   background: #ccc;
   color: black;
-  border:solid;
   width: 31%;
   padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
   padding-top: 0px;
@@ -693,19 +692,39 @@ div, ul, li{
         
 
     #Grid header{
-        width: 99.5%;
-        margin-left: 0.25%;
+        width: 100%;
         margin-top: 0.1%;
-        margin-bottom: 20px;
-        vertical-align: middle;
-        font-size: 25px;
-        height: 42px;
-        line-height: 42px;    }
+        /*margin-bottom: 20px;*/
+        /*height: 42px;
+        line-height: 42px;  */
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px
+        }
     
     .titre-long{
         font-size: 20px;
-        line-height: 20px;
-    }   
+        line-height: 30px;
+    } 
+
+    .titre{
+        font-size: 20px;
+        line-height: 60px;
+        background: pink;
+        margin-bottom: 15px;
+        white-space: normal;
+        height: 60px;
+
+    }  
+
+    .titrelong{
+        font-size: 20px;
+        line-height: 60px;
+        background: pink;
+        margin-bottom: 15px;
+        white-space: normal;
+        line-height: 30px;
+    }
 
 }
 
@@ -723,15 +742,20 @@ div, ul, li{
     }
 
     #Grid header{
-        height: 10px;
-        margin: 0px;
-        padding-bottom: 30px;
-    }
+        width: 100%;
+        margin-top: 0.1%;
+        margin-bottom: 20px;
+        height: 42px;
+        line-height: 42px;  
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px
+        }
     
     .titre-long{
-        font-size: 13px;
-        line-height: 10px;
-    }   
+        font-size: 20px;
+        line-height: 30px;
+    }  
 
 }
 
@@ -749,17 +773,22 @@ div, ul, li{
     display: none;
     }
 
-    #Grid header{
-        height: 10px;
-        margin: 0px;
-        padding-bottom: 30px;
-        font-size: 18px;
-    } 
+/*    #Grid header{
+        width: 100%;
+        margin-top: 0.1%;
+        margin-bottom: 20px;
+        height: 42px;
+        line-height: 42px;  
+        height: 60px;
+        font-size: 20px;
+        line-height: 60px
+        }
     
     .titre-long{
-        font-size: 13px;
-    }
-
+        font-size: 20px;
+        line-height: 30px;
+    } 
+*/
 
   
 }
@@ -767,14 +796,58 @@ div, ul, li{
 @media (max-width: 480px){
   
     #Grid  img{
-    max-height: 100px;
-    max-height: 100px;
+    max-height: 80px;
+    max-height: 80px;
     background-color: whites;
     }
 
     #Grid {
         margin: 0px;
     }
+  
+    #Grid header{
+        width: 100%;
+        margin-top: 0.1%;
+        height: 60px;
+        font-size: 15px;
+        line-height: 60px
+        }
+    
+    .titre-long{
+        font-size: 15px;
+        line-height: 30px;
+    } 
+
+}
+
+
+/* Adaptation tablettes */
+@media screen and (min-device-width: 768px) {
+        
+s
+
+}
+
+/* Adaptation tablettes */
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+        
+
+
+}
+
+/* 2 COL */
+
+@media (max-device-width: 600px){
+  
+
+
+
+  
+}
+
+@media (max-device-width: 480px){
+  
+
   
 }
 
@@ -791,7 +864,6 @@ div, ul, li{
 #rassurance li{
   display: inline-block;
   color: black;
-  border:solid;
   width: 160px;
   padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
   padding-bottom: 1.5%;
@@ -823,7 +895,6 @@ div, ul, li{
     #rassurance li{
       display: inline-block;
       color: black;
-      border:solid;
       width: 140px;
       padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
       padding-bottom: 1.5%;
@@ -844,7 +915,6 @@ div, ul, li{
     #rassurance li{
       display: inline-block;
       color: black;
-      border:solid;
       width: 47%;
       padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
       padding-bottom: 1.5%;
@@ -862,6 +932,61 @@ div, ul, li{
 }
 
 @media (max-width: 480px){
+    
+    .icon-credit-card, .icon-truck, .icon-thumbs-up, .icon-headphones, .icon-facebook, .icon-twitter, .icon-mail {
+     font-size: 1em;
+    }
+
+    #rassurance li{
+      font-size: 10px;
+
+    }
+
+}
+
+/* Adaptation tablettes */
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+        
+    #rassurance li{
+      display: inline-block;
+      color: black;
+      width: 140px;
+      padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
+      padding-bottom: 1.5%;
+      text-align: center;
+      font-size: 11px;
+      border-radius: 15px;
+    }
+
+    .icon-credit-card, .icon-truck, .icon-thumbs-up, .icon-headphones, .icon-facebook, .icon-twitter, .icon-mail {
+     font-size: 2em;
+    }
+
+}
+
+
+@media (max-device-width: 680px){
+  
+    #rassurance li{
+      display: inline-block;
+      color: black;
+      width: 47%;
+      padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
+      padding-bottom: 1.5%;
+      margin-bottom: 1em;
+      text-align: center;
+      font-size: 11px;
+      border-radius: 15px;
+    }
+
+    .icon-credit-card, .icon-truck, .icon-thumbs-up, .icon-headphones, .icon-facebook, .icon-twitter, .icon-mail {
+     font-size: 2em;
+    }
+
+  
+}
+
+@media (max-device-width: 480px){
     
     .icon-credit-card, .icon-truck, .icon-thumbs-up, .icon-headphones, .icon-facebook, .icon-twitter, .icon-mail {
      font-size: 1em;
@@ -897,11 +1022,20 @@ div, ul, li{
     color: blue;
 }
 
-/* Adaptation tablettes */
-@media screen and (min-width: 480px) and (max-width: 768px) {
+/* Adaptation smartphone */
+@media screen and (max-width: 480px) {
         
+    .text-icon{
+        display: none;
+    }
+}
 
-
+/* Adaptation smartphone */
+@media screen and (max-device-width: 480px) {
+        
+    .text-icon{
+        display: none;
+    }
 }
 
 
@@ -938,7 +1072,7 @@ footer article{
     top: 0px;
 }
 
-footer a:hover{
+footer li:hover >a{
     color: white;
 }
 
@@ -950,6 +1084,7 @@ footer article ul li {
     vertical-align: top;
     display: block;
     margin: 1em;
+    padding: 0.5em;
 }
 
 
@@ -971,6 +1106,45 @@ footer article ul li {
 
 /* Adaptation smartphone */
 @media screen and (max-width: 480px) {
+    footer{
+        width: 100%;
+    }
+
+    footer article{
+        display: block;
+        width: 100%;
+        margin: 0px;
+    }
+
+    footer article ul li{
+        margin: 0.5em;
+        padding: 0px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    footer header{
+        display: none;
+    }
+}
+
+/* Adaptation tablettes */
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+    
+
+    footer{
+        width: 100%;
+    }
+
+    footer article{
+        width: 21%;
+    }
+}
+
+
+
+/* Adaptation smartphone */
+@media screen and (max-device-width: 480px) {
     footer{
         width: 100%;
     }
