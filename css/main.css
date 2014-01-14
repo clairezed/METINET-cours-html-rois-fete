@@ -105,7 +105,7 @@ img {
 nav, .featured, .seasonal, .rassurance, .bottom, .search-nav, .menu-drop-down{
         width: 90%;
         max-width: 920px;
-        margin: 0 auto;
+        margin: 3px auto;
 }
 
 /* Colors */
@@ -185,7 +185,7 @@ nav .main-nav:after {
 
 /* title nav */
 nav .title-btn{
-    width: 45%;
+    width: 50%;
     font-size: 1.286em;
     float: left;
     text-align: left;
@@ -197,7 +197,8 @@ nav .title-btn{
         margin-right: 5px;
     }
     nav .title-btn h1{
-        line-height: 1;
+        line-height: 1.8;
+        font-size: 2.5em
     }
     nav .title-btn:hover{
         color: #969696;
@@ -207,7 +208,7 @@ nav .title-btn{
 /* menu btn nav */
 nav .menu-btn-nav{
     float: right;
-    width: 55%;
+    width: 50%;
     right: 0;
 }
     nav .menu-btn-nav .nav-btn{
@@ -377,6 +378,34 @@ nav .item-btn{
         }
 
 
+/* Adaptation titre */
+@media screen and (min-width: 875px) and (max-width: 1020px){
+    nav .title-btn h1{
+        line-height: 3.3;
+        font-size: 1.8em;
+    }
+    nav .menu-btn-nav{
+        width: 55%;
+    }
+    nav .title-btn{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 875px){
+    nav .title-btn h1{
+        
+        line-height: 4;
+        font-size: 1.5em;
+    }
+    nav .menu-btn-nav{
+        width: 55%;
+    }
+    nav .title-btn{
+        width: 45%;
+    }
+}
+
+
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -452,6 +481,13 @@ nav .item-btn{
         width: 100%;
         text-align: center;
     }
+         nav .title-btn h1 {
+            font-size: 1.5em;  
+            line-height: 1.8;  
+        }
+        nav .title-btn img{
+            width: 45px;
+        }
     nav .menu-btn-nav{
         width: 100%;
         margin: 20px 0 0px 0;
