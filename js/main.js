@@ -1,22 +1,29 @@
    $(document).ready(function() {
 
 
-
-    // jquery for desktop + tablette
-    if(window.matchMedia("(min-width:480px)").matches){
-
       $('.close-menu').on('click', function(){
         $('.menu-drop-down').slideUp();
       })
 
        $('.item-btn').on('click', function () {
+        if( $(window).width()> 480){ //click event only when desktop or tablette
           var type = $(this).children('a').attr('class');
           
           $('.menu-drop-down').not($("#"+ type+"-menu")).slideUp();
           $("#"+ type+"-menu").slideToggle();
+        }
+      });
 
-        });
-    }
+    // adapt behaviour following screen width
+    $(window).resize(function() {
+      var pageWidth = $(window).width(); 
+      if( pageWidth> 480){
+         $('.mobile-item-nav').css("display", "none");
+      }
+      if( pageWidth< 480){
+          $('.menu-drop-down').css("display", "none");
+      }
+    });
     
     $('.menu-btn').on('click', function(){
         $(this).toggleClass("active");

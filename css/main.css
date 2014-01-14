@@ -105,7 +105,7 @@ img {
 nav, .featured, .seasonal, .rassurance, .bottom, .search-nav, .menu-drop-down{
         width: 90%;
         max-width: 920px;
-        margin: 3px auto;
+        margin: 0px auto;
 }
 
 /* Colors */
@@ -256,6 +256,7 @@ nav .menu-btn-nav{
 .search-nav{
     height: 30px;
     padding: 0;
+    margin: 3px auto;
 }
     .search-nav form{
         float: right;
