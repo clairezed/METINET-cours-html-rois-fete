@@ -70,7 +70,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, .active a {
     color: #fff;
     text-decoration: none;
 }
@@ -102,35 +102,35 @@ img {
 
 /**************************** Global structure **********************/
 
-nav, .featured, .seasonal, .rassurance, .bottom, .search-nav, .menu-drop-down{
+nav, .featured, .seasonal, #rassurance, #reseaux-sociaux, .bottom, .search-nav, .menu-drop-down{
         width: 90%;
         max-width: 920px;
-        margin: 3px auto;
+        margin: 0px auto;
 }
 
 /* Colors */
 .pink{
     background: #ff38a9;
 }
-.pink:hover{
+.pink:hover, .pink.active{
     background: #d90484;
 }
 .yellow{
     background: #ffcf30;
 }
-.yellow:hover{
+.yellow:hover, .yellow.active{
     background: #f5ab00;
 }
 .green{
     background: #b4e35d;
 }
-.green:hover{
+.green:hover, .green.active{
     background: #85b82e;
 }
 .blue{
     background: #30c1ff;
 }
-.blue:hover{
+.blue:hover, .blue.active{
     background: #008dd4;
 }
 
@@ -256,6 +256,7 @@ nav .menu-btn-nav{
 .search-nav{
     height: 30px;
     padding: 0;
+    margin: 3px auto;
 }
     .search-nav form{
         float: right;
@@ -499,7 +500,7 @@ nav .item-btn{
             padding: 0.2em;
             height: 68px;
         }
-        nav .menu-btn-nav .nav-btn:hover a, nav .menu-btn-nav .nav-btn.active a{
+        nav .nav-btn:hover a, nav .nav-btn.active a{
             color: #fff;
         }
             nav .menu-btn-nav .nav-btn .icon{
@@ -1136,13 +1137,14 @@ s
 }
 
 /***** reseaux-sociaux *********/
-.reseaux-sociaux{
-    text-align: center;
+
+#reseaux-sociaux{
     padding: 0.5em;
     margin: 0px;
+    text-align: center;
 }
 
-.reseaux-sociaux li{
+#reseaux-sociaux li{
     width: 27%;
     text-align: center;
     margin: 2%;
@@ -1150,11 +1152,30 @@ s
 
 }
 
-.reseaux-sociaux a{
+#reseaux{
+    text-align: center; 
+}
+
+#reseaux li{
+    width: 16%;
+    text-align: center;
+    margin: 2%;
+    display: inline-block;
+}
+
+#reseaux a{
     color: #aa;
 }
 
-.reseaux-sociaux a:hover{
+#reseaux a:hover{
+    color: blue;
+}
+
+#reseaux-sociaux a{
+    color: #aa;
+}
+
+#reseaux-sociaux a:hover{
     color: blue;
 }
 
@@ -1212,9 +1233,9 @@ footer li:hover >a{
     color: white;
 }
 
-footer li:hover {
+/*footer li:hover {
     background-color: #d90484;
-}
+}*/
 
 footer article ul li {
     vertical-align: top;
@@ -1223,6 +1244,21 @@ footer article ul li {
     padding: 0.5em;
 }
 
+.pink2:hover{
+    background: #d90484;
+}
+
+.yellow2:hover{
+    background: #f5ab00;
+}
+
+.green2:hover{
+    background: #85b82e;
+}
+
+.blue2:hover{
+    background: #008dd4;
+}
 
 
 /* Adaptation tablettes */
