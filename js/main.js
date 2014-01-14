@@ -7,7 +7,7 @@
 
        $('.item-btn').on('click', function () {
         if( $(window).width()> 480){ //click event only when desktop or tablette
-          $('.item-btn').removeClass("active");
+          $('.item-btn').not($(this)).removeClass("active");
           $(this).toggleClass("active");
           var type = $(this).children('a').attr('class');
           
@@ -28,7 +28,6 @@
     });
     
     $('.menu-btn').on('click', function(){
-
         $(this).toggleClass("active");
         $('.mobile-item-nav').slideToggle();
       });

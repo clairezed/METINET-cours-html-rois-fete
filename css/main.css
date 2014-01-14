@@ -29,8 +29,6 @@ html{
 
 /* Body */
 body {
-    /*background: #EEE;*/
-    /*background: #77CAC8;*/
     color: #1A1A1A;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Montserrat', 'Lucida Sans
@@ -39,6 +37,7 @@ body {
     text-align: left;
     width: 100%;
     height: 100%;
+    background: url(../img/logo_flat.png) no-repeat 0% 60%
 }
 
 h1, h2, h3, h4, h5, h6 {
