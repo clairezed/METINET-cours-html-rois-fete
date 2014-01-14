@@ -70,7 +70,7 @@ a:link, a:visited {
     text-decoration: none;
 }
 
-a:hover, a:active {
+a:hover, a:active, .active a {
     color: #fff;
     text-decoration: none;
 }
@@ -112,25 +112,25 @@ nav, .featured, .seasonal, #rassurance, .bottom, .search-nav, .menu-drop-down{
 .pink{
     background: #ff38a9;
 }
-.pink:hover{
+.pink:hover, .pink.active{
     background: #d90484;
 }
 .yellow{
     background: #ffcf30;
 }
-.yellow:hover{
+.yellow:hover, .yellow.active{
     background: #f5ab00;
 }
 .green{
     background: #b4e35d;
 }
-.green:hover{
+.green:hover, .green.active{
     background: #85b82e;
 }
 .blue{
     background: #30c1ff;
 }
-.blue:hover{
+.blue:hover, .blue.active{
     background: #008dd4;
 }
 
@@ -500,7 +500,7 @@ nav .item-btn{
             padding: 0.2em;
             height: 68px;
         }
-        nav .menu-btn-nav .nav-btn:hover a, nav .menu-btn-nav .nav-btn.active a{
+        nav .nav-btn:hover a, nav .nav-btn.active a{
             color: #fff;
         }
             nav .menu-btn-nav .nav-btn .icon{
