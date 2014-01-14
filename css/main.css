@@ -741,16 +741,19 @@ nav .item-btn{
 
 /**************************** Seasonal **********************/
 
-.seasonal-container{
+/*.seasonal-container{
     background: #f7f7f7;
     margin: 10px 0;
-}
+}*/
 
 .seasonal{
     margin-top: 3em;
+    background: #eee;
+    padding: 1.5%;
+    margin-bottom: 25px;
 }
     .seasonal h1{
-        padding-top: 10px;
+        margin-bottom: 15px;
     }
 
 
@@ -811,12 +814,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, St
 }
 
 
-
-
 #Grid  img{
     max-height: 125px;
     max-height: 125px;
-    background-color: whites;
+    background-color: white;
 }
 
 #Grid li p{
@@ -1224,7 +1225,7 @@ footer{
     margin-top: 0px;
     font-size: 1em;
     background-color: #EEE;
-    /*border-top: solid;*/
+    border-top: 1px dotted black;
     text-align: left;
 
 }
@@ -1375,8 +1376,8 @@ footer article ul li {
 }
 .product{
     display: inline-block;
-    background-color: #f7f7f7;
-    padding: 10px;
+    background-color: #eee;
+    padding: 1.5%;
 }
 .container-picture, .product-desc{
     display: inline-block;
