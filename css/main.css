@@ -1026,6 +1026,7 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, St
   text-align: center;
   font-size: 12px;
   border-radius: 15px;
+  border: solid;
 }
 
 #rassurance li:hover > a{
