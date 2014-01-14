@@ -736,7 +736,24 @@ nav .item-btn{
       top: -10px;
       border-color: transparent transparent transparent transparent !important;
     }
+
+    .active.bubble-top-pink:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-yellow:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-green:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-blue:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
 }
+
 
 
 /**************************** exemple justify **********************/
