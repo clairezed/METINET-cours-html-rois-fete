@@ -752,6 +752,10 @@ nav .item-btn{
 .seasonal{
     margin-top: 3em;
 }
+.seasonal-container{
+    background: #eee;
+    margin: 10px 0;
+}
 
 /* -- DEFAULTS -- */
 
@@ -772,7 +776,7 @@ nav .item-btn{
 
 #Grid li{
   display: inline-block;
-  background: #ccc;
+  background: #fff;
   color: black;
   width: 31%;
   padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
@@ -1449,6 +1453,6 @@ footer article ul li {
 }
 
 .product-container a:hover{
-    color: blue;
+    color: #969696;
 }
 
