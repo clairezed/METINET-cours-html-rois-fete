@@ -407,6 +407,7 @@ nav .item-btn{
 /*@media screen and (min-width: 768px) {
     body{
         background: url(../img/logo_flat.png) no-repeat 0% 60%;
+        /*background-size: 20%;*/
     }
 }*/
 
@@ -756,16 +757,19 @@ nav .item-btn{
 
 /**************************** Seasonal **********************/
 
-.seasonal-container{
+/*.seasonal-container{
     background: #f7f7f7;
     margin: 10px 0;
-}
+}*/
 
 .seasonal{
     margin-top: 3em;
+    background: #eee;
+    padding: 1.5%;
+    margin-bottom: 25px;
 }
     .seasonal h1{
-        padding-top: 10px;
+        margin-bottom: 15px;
     }
 
 
@@ -826,12 +830,10 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, St
 }
 
 
-
-
 #Grid  img{
     max-height: 125px;
     max-height: 125px;
-    background-color: whites;
+    background-color: white;
 }
 
 #Grid li p{
@@ -1239,7 +1241,7 @@ footer{
     margin-top: 0px;
     font-size: 1em;
     background-color: #EEE;
-    /*border-top: solid;*/
+    border-top: 1px dotted black;
     text-align: left;
 
 }
@@ -1392,6 +1394,8 @@ footer article ul li {
 }
 .product{
     display: inline-block;
+    background-color: #eee;
+    padding: 1.5%;
 }
 .container-picture, .product-desc{
     display: inline-block;
@@ -1456,21 +1460,22 @@ footer article ul li {
             color: #fff;
         }
 
-.similar-products li{
-    display: inline-block;
-}
-
-.similar-products h2 {
+.similar-products{
     margin-top: 20px;
-    margin-bottom: 20px;
 }
+    .similar-products h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .similar-products li{
+        display: inline-block;
+    }
 
-.similar-products h3 {
-    text-align: center;
-}
+    .similar-products img{
+        max-height: 150px;
+        max-width: 220px;
+    }
 
-.similar-products img{
-    max-height: 150px;
-    max-width: 220px;
-}
-
+    .similar-products h3 {
+        text-align: center;
+    }
