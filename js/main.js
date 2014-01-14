@@ -1,6 +1,11 @@
    $(document).ready(function() {
 
-
+    $(window).resize(function () {
+      var width = $(window).width();
+      var height = $(window).height();
+      console.log(width);
+      console.log(height);
+    })
 
     // jquery for desktop + tablette
     if(window.matchMedia("(min-width:480px)").matches){
@@ -26,8 +31,8 @@
 
     $('.feat-menu-item').click(function(e) {
       e.preventDefault();
-      $('.feat-menu-item').removeClass('feat-selected');
-      $(this).addClass('feat-selected');
+      $('.feat-menu-item').removeClass('active');
+      $(this).addClass('active');
 
       var id = this.id.substring(5);
       var img = "#img-" + id;

@@ -607,7 +607,7 @@ nav .item-btn{
     width: 100%;
     display: inline-block;
     text-align: center;
-    
+/*    margin: -1.5px 0 0 0;*/
 }
 
 .feat-menu-item a {
@@ -1323,6 +1323,15 @@ footer article ul li {
     width: 47%;
 }
 
+.secondary-pictures img {
+    margin-right: 3px;
+    margin-top: 3px;
+}
+
+.ratings {
+    margin-top: 10px;
+}
+
 .product-desc{
     vertical-align: top;
     margin-left: 20px;
@@ -1330,6 +1339,14 @@ footer article ul li {
     .product-desc .header-product{
         margin-bottom: 20px;
     }
+
+.footer-product {
+    margin-top: 20px;
+}
+
+.footer-product h2 {
+    display: inline-block;
+}
 
 .add-kart{
         color: #333;
@@ -1351,6 +1368,7 @@ footer article ul li {
         -ms-user-select: none;
         -o-user-select: none;
         float: right;
+
     }
         .add-kart:hover{
             color: #fff;
