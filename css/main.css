@@ -574,16 +574,14 @@ nav .item-btn{
 
 .feat-carousel{
     width: 100%;
-    /*min-width: 200px;*/
-    background-color: white;
-    /*float: left;*/
-    /*overflow: hidden;*/
+    /*background-color: white;*/
 }
 
 .feat-side-menu {
     width: 100%;
     display: inline-block;
-    /*float: left;*/
+    float: left;
+    clear: none;
 }
 
 .feat-side-menu li {
@@ -593,9 +591,9 @@ nav .item-btn{
 
 .feat-img {
     width: 100%;
-    /*max-height: 400px;*/
     display: inline-block;
-    /*float: left;*/
+    float: left;
+    clear: none;
 }
 
 .not-displayed {
@@ -608,7 +606,6 @@ nav .item-btn{
 
 .feat-menu-item {
     width: 100%;
-    /*background: #ff38a9;*/
     display: inline-block;
     text-align: center;
     
@@ -620,13 +617,11 @@ nav .item-btn{
     font-style: italic;
     height: 40px;
     display: block;
-    /*padding: 0 30px;*/
     line-height: 40px;
     -webkit-transition: all 0.15s ease;
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
-    /*margin: 0 auto;*/
 }
 
 .feat-text {
@@ -645,6 +640,7 @@ nav .item-btn{
 }
 
 /* Responsive */
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .feat-side-menu li {
         width: 50%;
@@ -654,6 +650,69 @@ nav .item-btn{
 @media screen and (max-width: 480px) {
     .feat-side-menu li {
         width: 100%;
+    }
+
+    .slider h2 {
+        font-size: 1em;
+    }
+}
+
+/*************************** Effets CSS ****************************/
+
+.bubble-top {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.bubble-top:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  border-style: solid;
+  color: red;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  left: -webkit-calc(50% - 10px);
+  left: calc(50% - 10px);
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent transparent transparent;
+  -webkit-transition-property: top;
+  transition-property: top;
+}
+
+.bubble-top:hover:before {
+  top: -10px;
+}
+
+.bubble-top-pink:hover:before {
+    border-color: transparent transparent #d90484 transparent;
+}
+
+.bubble-top-yellow:hover:before {
+    border-color: transparent transparent #f5ab00 transparent;
+}
+
+.bubble-top-green:hover:before {
+    border-color: transparent transparent #85b82e transparent;
+}
+
+.bubble-top-blue:hover:before {
+    border-color: transparent transparent #008dd4 transparent;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+    .bubble-top:hover:before {
+      top: -10px;
+      border-color: transparent transparent transparent transparent !important;
     }
 }
 
