@@ -407,6 +407,7 @@ nav .item-btn{
 @media screen and (min-width: 768px) {
     body{
         background: url(../img/logo_flat.png) no-repeat 0% 60%;
+        /*background-size: 20%;*/
     }
 }
 
