@@ -31,7 +31,6 @@
         $('.mobile-item-nav').slideToggle();
       });
 
-
     $('.feat-menu-item').click(function(e) {
       e.preventDefault();
       $('.feat-menu-item').removeClass('active');
@@ -44,5 +43,4 @@
       $(img).removeClass('not-displayed');
     });
     
-
 })
