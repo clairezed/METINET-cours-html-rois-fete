@@ -321,6 +321,24 @@ nav .item-btn{
         .menu-drop-down#accessory-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
             background-color: #f5ab00;
         }
+    .menu-drop-down#wig-menu, .menu-drop-down.decoration{
+        background-color: #b4e35d;
+    }
+        .menu-drop-down#wig-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
+            background-color: #85b82e;
+        }
+    .menu-drop-down#mask-menu, .menu-drop-down.makeup{
+        background-color: #30c1ff;
+    }
+        .menu-drop-down#mask-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        background-color: #008dd4;
+        }
+    .menu-drop-down#makeup-menu, .menu-drop-down.makeup{
+        background-color: #ff38a9;
+    }
+        .menu-drop-down#makeup-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        background-color: #d90484;
+        }
     .menu-drop-down .col{
         width: 22%;
         display: inline-block;
@@ -543,6 +561,14 @@ nav .item-btn{
     /*float: left;*/
 }
 
+.not-displayed {
+    display: none;
+}
+
+.displayed {
+    display: block;
+}
+
 .feat-menu-item {
     width: 100%;
     /*background: #ff38a9;*/
@@ -564,6 +590,21 @@ nav .item-btn{
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
     /*margin: 0 auto;*/
+}
+
+.feat-text {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.slider h2 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 45%;
+    padding: 8px;
 }
 
 /* Responsive */
