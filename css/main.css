@@ -1362,6 +1362,8 @@ footer article ul li {
 .secondary-pictures img {
     margin-right: 3px;
     margin-top: 3px;
+    max-width: 95px;
+    max-height: 95px;
 }
 
 .ratings {
@@ -1416,4 +1418,12 @@ footer article ul li {
     display: inline-block;
 }
 
+.similar-products img{
+    max-height: 150px;
+    max-width: 220px;
+}
+
+.product-container a:hover{
+    color: blue;
+}
 
