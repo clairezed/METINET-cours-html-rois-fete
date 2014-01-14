@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Headings */
 h1 {
-    font-size: 1.571em;
+    font-size: 1.5em;
     font-weight: bold;} /* 22px*/
 h2 { font-size: 1.286em;    } /* 18px*/
 h3 {font-size: 1em} /* 14px */
@@ -105,7 +105,7 @@ img {
 nav, .featured, .seasonal, .rassurance, .bottom, .search-nav, .menu-drop-down{
         width: 90%;
         max-width: 920px;
-        margin: 0 auto;
+        margin: 0px auto;
 }
 
 /* Colors */
@@ -185,16 +185,20 @@ nav .main-nav:after {
 
 /* title nav */
 nav .title-btn{
-    width: 45%;
+    width: 50%;
     font-size: 1.286em;
     float: left;
     text-align: left;
 }
     nav .title-btn img{
-        width: 40px;
+        width: 70px;
         display: inline;
         float: left;
         margin-right: 5px;
+    }
+    nav .title-btn h1{
+        line-height: 1.8;
+        font-size: 2.5em
     }
     nav .title-btn:hover{
         color: #969696;
@@ -204,7 +208,7 @@ nav .title-btn{
 /* menu btn nav */
 nav .menu-btn-nav{
     float: right;
-    width: 55%;
+    width: 50%;
     right: 0;
 }
     nav .menu-btn-nav .nav-btn{
@@ -252,6 +256,7 @@ nav .menu-btn-nav{
 .search-nav{
     height: 30px;
     padding: 0;
+    margin: 3px auto;
 }
     .search-nav form{
         float: right;
@@ -318,6 +323,24 @@ nav .item-btn{
         .menu-drop-down#accessory-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
             background-color: #f5ab00;
         }
+    .menu-drop-down#wig-menu, .menu-drop-down.decoration{
+        background-color: #b4e35d;
+    }
+        .menu-drop-down#wig-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
+            background-color: #85b82e;
+        }
+    .menu-drop-down#mask-menu, .menu-drop-down.makeup{
+        background-color: #30c1ff;
+    }
+        .menu-drop-down#mask-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        background-color: #008dd4;
+        }
+    .menu-drop-down#makeup-menu, .menu-drop-down.makeup{
+        background-color: #ff38a9;
+    }
+        .menu-drop-down#makeup-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        background-color: #d90484;
+        }
     .menu-drop-down .col{
         width: 22%;
         display: inline-block;
@@ -356,6 +379,34 @@ nav .item-btn{
         }
 
 
+/* Adaptation titre */
+@media screen and (min-width: 875px) and (max-width: 1020px){
+    nav .title-btn h1{
+        line-height: 3.3;
+        font-size: 1.8em;
+    }
+    nav .menu-btn-nav{
+        width: 55%;
+    }
+    nav .title-btn{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 875px){
+    nav .title-btn h1{
+        
+        line-height: 4;
+        font-size: 1.5em;
+    }
+    nav .menu-btn-nav{
+        width: 55%;
+    }
+    nav .title-btn{
+        width: 45%;
+    }
+}
+
+
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -367,6 +418,9 @@ nav .item-btn{
     }
         nav .title-btn h1 {
             font-size: 1.2em;    
+        }
+        nav .title-btn img{
+            width: 40px;
         }
     .search-nav form{
         width: 100%;
@@ -428,6 +482,13 @@ nav .item-btn{
         width: 100%;
         text-align: center;
     }
+         nav .title-btn h1 {
+            font-size: 1.5em;  
+            line-height: 1.8;  
+        }
+        nav .title-btn img{
+            width: 45px;
+        }
     nav .menu-btn-nav{
         width: 100%;
         margin: 20px 0 0px 0;
@@ -513,16 +574,14 @@ nav .item-btn{
 
 .feat-carousel{
     width: 100%;
-    /*min-width: 200px;*/
-    background-color: white;
-    /*float: left;*/
-    /*overflow: hidden;*/
+    /*background-color: white;*/
 }
 
 .feat-side-menu {
     width: 100%;
     display: inline-block;
-    /*float: left;*/
+    float: left;
+    clear: none;
 }
 
 .feat-side-menu li {
@@ -532,14 +591,21 @@ nav .item-btn{
 
 .feat-img {
     width: 100%;
-    /*max-height: 400px;*/
     display: inline-block;
-    /*float: left;*/
+    float: left;
+    clear: none;
+}
+
+.not-displayed {
+    display: none;
+}
+
+.displayed {
+    display: block;
 }
 
 .feat-menu-item {
     width: 100%;
-    /*background: #ff38a9;*/
     display: inline-block;
     text-align: center;
     
@@ -551,16 +617,30 @@ nav .item-btn{
     font-style: italic;
     height: 40px;
     display: block;
-    /*padding: 0 30px;*/
     line-height: 40px;
     -webkit-transition: all 0.15s ease;
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     transition: all 0.15s ease;
-    /*margin: 0 auto;*/
+}
+
+.feat-text {
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.slider h2 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 45%;
+    padding: 8px;
 }
 
 /* Responsive */
+
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .feat-side-menu li {
         width: 50%;
@@ -570,6 +650,69 @@ nav .item-btn{
 @media screen and (max-width: 480px) {
     .feat-side-menu li {
         width: 100%;
+    }
+
+    .slider h2 {
+        font-size: 1em;
+    }
+}
+
+/*************************** Effets CSS ****************************/
+
+.bubble-top {
+  display: inline-block;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.bubble-top:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  border-style: solid;
+  color: red;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  left: -webkit-calc(50% - 10px);
+  left: calc(50% - 10px);
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent transparent transparent;
+  -webkit-transition-property: top;
+  transition-property: top;
+}
+
+.bubble-top:hover:before {
+  top: -10px;
+}
+
+.bubble-top-pink:hover:before {
+    border-color: transparent transparent #d90484 transparent;
+}
+
+.bubble-top-yellow:hover:before {
+    border-color: transparent transparent #f5ab00 transparent;
+}
+
+.bubble-top-green:hover:before {
+    border-color: transparent transparent #85b82e transparent;
+}
+
+.bubble-top-blue:hover:before {
+    border-color: transparent transparent #008dd4 transparent;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+    .bubble-top:hover:before {
+      top: -10px;
+      border-color: transparent transparent transparent transparent !important;
     }
 }
 
@@ -1160,3 +1303,64 @@ footer article ul li {
         display: none;
     }
 }
+
+
+
+/************************** PRODUCT PAGE ******************************/
+
+.product-container{
+        width: 90%;
+        max-width: 920px;
+        margin: 0 auto;
+}
+.breadcrumb, .product{
+    margin-bottom: 20px;
+}
+.product{
+    display: inline-block;
+}
+.container-picture, .product-desc{
+    display: inline-block;
+    width: 47%;
+}
+
+.product-desc{
+    vertical-align: top;
+    margin-left: 20px;
+}
+    .product-desc .header-product{
+        margin-bottom: 20px;
+    }
+
+.add-kart{
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        display: inline-block;
+        padding: 3px 7px;
+        margin: 20px 5px 10px;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid #969696;
+        /*border-radius: 3px;*/
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        float: right;
+    }
+        .add-kart:hover{
+            color: #fff;
+            background-color: #CCC;
+            border-color: #888;
+        }
+
+.similar-products li{
+    display: inline-block;
+}
+
+
