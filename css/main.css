@@ -4,15 +4,6 @@
 
 /**************************** Global **********************/
 
-html{
-    height: 100%;
-}
-*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 /* Body */
 body {
     color: #1A1A1A;
@@ -34,12 +25,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Headings */
 h1 {
     font-size: 1.5em;
-    font-weight: bold;} /* 22px*/
-h2 { font-size: 1.286em;    } /* 18px*/
-h3 {font-size: 1em} /* 14px */
-/*h2 {font-size: 1.429em} /* 20px*/
-/*h4 {font-size: 1.143em} /* 16px*/
-
+    font-weight: bold;}
+h2 { font-size: 1.286em;    }
+h3 {font-size: 1em}
 
 
 /* Anchors */
@@ -163,9 +151,6 @@ nav.main-nav{
     padding-top: 1%;
     height: 50px;   
 }
-nav .main-nav:after {
-/*clear: both;
-*/}
 
 /* title nav */
 nav .title-btn{
@@ -220,11 +205,6 @@ nav .menu-btn-nav{
         vertical-align: middle;
         cursor: pointer;
         border: 1px solid #969696;
-        /*border-radius: 3px;*/
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
     }
         nav .menu-btn-nav .basket-btn:hover{
             color: #fff;
@@ -234,7 +214,6 @@ nav .menu-btn-nav{
     nav .menu-btn-nav .menu-btn{
         display: none;
     }
-
 
 /* Search nav */
 .search-nav{
@@ -263,11 +242,6 @@ nav .menu-btn-nav{
     }
 
 /* Item nav */
-
-.item-part{
-    width: 100%;
-}
-
 nav.item-nav{
     height: 40px;
 }
@@ -295,36 +269,31 @@ nav .item-btn{
     height: auto;
     display: none;
 }   
-    .menu-drop-down#disguise-menu, .menu-drop-down.makeup{
+    .menu-drop-down#disguise-menu, .menu-drop-down#makeup-menu{
         background-color: #ff38a9;
     }
-        .menu-drop-down#disguise-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        .menu-drop-down#disguise-menu .footer-menu, .menu-drop-down#makeup-menu .footer-menu{
         background-color: #d90484;
         }
-    .menu-drop-down#accessory-menu, .menu-drop-down.decoration{
+    .menu-drop-down#accessory-menu, .menu-drop-down#decoration-menu{
         background-color: #ffcf30;
     }
-        .menu-drop-down#accessory-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
+        .menu-drop-down#accessory-menu .footer-menu, .menu-drop-down#decoration-menu .footer-menu{
             background-color: #f5ab00;
         }
-    .menu-drop-down#wig-menu, .menu-drop-down.decoration{
+    .menu-drop-down#wig-menu{
         background-color: #b4e35d;
     }
-        .menu-drop-down#wig-menu .footer-menu, .menu-drop-down.decoration .footer-menu{
+        .menu-drop-down#wig-menu .footer-menu{
             background-color: #85b82e;
         }
-    .menu-drop-down#mask-menu, .menu-drop-down.makeup{
+    .menu-drop-down#mask-menu{
         background-color: #30c1ff;
     }
-        .menu-drop-down#mask-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
+        .menu-drop-down#mask-menu .footer-menu{
         background-color: #008dd4;
         }
-    .menu-drop-down#makeup-menu, .menu-drop-down.makeup{
-        background-color: #ff38a9;
-    }
-        .menu-drop-down#makeup-menu .footer-menu, .menu-drop-down.makeup .footer-menu{
-        background-color: #d90484;
-        }
+
     .menu-drop-down .col{
         width: 22%;
         display: inline-block;
@@ -436,11 +405,9 @@ nav .item-btn{
     }
 }
 
-
 /* Adaptation smartphone */
 @media screen and (max-width: 480px) {
     header{
-        /*padding-bottom: 60px;*/
         height: auto;
     }
         header:after{
@@ -482,16 +449,8 @@ nav .item-btn{
             padding: 0.2em;
             height: 68px;
         }
-        nav .nav-btn:hover a, nav .nav-btn.active a{
-            color: #fff;
-        }
             nav .menu-btn-nav .nav-btn .icon{
                 display: block;
-            }
-            nav .nav-btn [class^="icon-"]:before, [class*=" icon-"]:before{
-                font-size: 3.3em;
-                width: 100%;
-                margin: 0;
             }
             nav .menu-btn-nav .basket-btn{
                 padding-bottom: 7px;
@@ -530,7 +489,6 @@ nav .item-btn{
         display: none;
     }
     nav.mobile-item-nav{
-        /*display: none;*/
         width: 90%;
         height: auto;
     }
@@ -549,7 +507,6 @@ nav .item-btn{
             width: 100%;
             height: 35px;
         }
-    
 
 }
 /**************************** Featured **********************/
