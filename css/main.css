@@ -1382,9 +1382,11 @@ footer article ul li {
         max-width: 920px;
         margin: 0 auto;
 }
+
 .product-container a:hover{
     color: #969696;
 }
+
 .breadcrumb, .product{
     margin-bottom: 20px;
 }
@@ -1403,6 +1405,14 @@ footer article ul li {
     max-height: 95px;
 }
 
+    .secondary-pictures img:hover {
+        -moz-box-shadow: 2px 2px 10px 0px #656565;
+        -webkit-box-shadow: 2px 2px 10px 0px #656565;
+        -o-box-shadow: 2px 2px 10px 0px #656565;
+        box-shadow: 2px 2px 10px 0px #656565;
+        filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=10);
+    }
+
 .ratings {
     margin-top: 10px;
 }
@@ -1416,7 +1426,7 @@ footer article ul li {
     }
 
 .footer-product {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .footer-product h2 {
@@ -1425,19 +1435,16 @@ footer article ul li {
 
 .add-kart{
         color: #333;
-        background-color: #fff;
         border-color: #ccc;
         display: inline-block;
-        padding: 3px 7px;
-        margin: 20px 5px 10px;
-        font-size: 14px;
+        padding: 10px;
+        font-size: 30px;
         font-weight: normal;
         text-align: center;
         white-space: nowrap;
         vertical-align: middle;
         cursor: pointer;
         border: 1px solid #969696;
-        /*border-radius: 3px;*/
         -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
@@ -1447,20 +1454,23 @@ footer article ul li {
     }
         .add-kart:hover{
             color: #fff;
-            background-color: #CCC;
-            border-color: #888;
         }
 
 .similar-products li{
     display: inline-block;
 }
 
+.similar-products h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.similar-products h3 {
+    text-align: center;
+}
+
 .similar-products img{
     max-height: 150px;
     max-width: 220px;
-}
-
-.product-container a:hover{
-    color: #969696;
 }
 
