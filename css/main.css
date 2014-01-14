@@ -102,7 +102,7 @@ img {
 
 /**************************** Global structure **********************/
 
-nav, .featured, .seasonal, .rassurance, .bottom, .search-nav, .menu-drop-down{
+nav, .featured, .seasonal, #rassurance, .bottom, .search-nav, .menu-drop-down{
         width: 90%;
         max-width: 920px;
         margin: 0px auto;
@@ -1213,9 +1213,9 @@ footer li:hover >a{
     color: white;
 }
 
-footer li:hover {
+/*footer li:hover {
     background-color: #d90484;
-}
+}*/
 
 footer article ul li {
     vertical-align: top;
@@ -1224,6 +1224,21 @@ footer article ul li {
     padding: 0.5em;
 }
 
+.pink2:hover{
+    background: #d90484;
+}
+
+.yellow2:hover{
+    background: #f5ab00;
+}
+
+.green2:hover{
+    background: #85b82e;
+}
+
+.blue2:hover{
+    background: #008dd4;
+}
 
 
 /* Adaptation tablettes */
