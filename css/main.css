@@ -675,7 +675,6 @@ nav .item-btn{
   z-index: -1;
   content: '';
   border-style: solid;
-  color: red;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   left: -webkit-calc(50% - 10px);
@@ -703,6 +702,26 @@ nav .item-btn{
 }
 
 .bubble-top-blue:hover:before {
+    border-color: transparent transparent #008dd4 transparent;
+}
+
+.active.bubble-top-pink:before {
+    top: -10px;
+    border-color: transparent transparent #d90484 transparent;
+}
+
+.active.bubble-top-yellow:before {
+    top: -10px;
+    border-color: transparent transparent #f5ab00 transparent;
+}
+
+.active.bubble-top-green:before {
+    top: -10px;
+    border-color: transparent transparent #85b82e transparent;
+}
+
+.active.bubble-top-blue:before {
+    top: -10px;
     border-color: transparent transparent #008dd4 transparent;
 }
 
