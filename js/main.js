@@ -17,16 +17,24 @@
 
         });
     }
-
-    $('.feat-menu-item').click(function() {
-      $('.feat-menu-item').removeClass('feat-selected');
-      $(this).addClass('feat-selected');
-    })
     
     $('.menu-btn').on('click', function(){
         $(this).toggleClass("active");
         $('.mobile-item-nav').slideToggle();
-      })
+      });
+
+
+    $('.feat-menu-item').click(function(e) {
+      e.preventDefault();
+      $('.feat-menu-item').removeClass('feat-selected');
+      $(this).addClass('feat-selected');
+
+      var id = this.id.substring(5);
+      var img = "#img-" + id;
+
+      $('.slider').children('li').addClass('not-displayed');
+      $(img).removeClass('not-displayed');
+    });
     
 
 })
