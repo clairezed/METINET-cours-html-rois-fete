@@ -1,6 +1,5 @@
    $(document).ready(function() {
 
-
       $('.close-menu').on('click', function(){
         $('.menu-drop-down').slideUp();
       })
@@ -35,8 +34,8 @@
 
     $('.feat-menu-item').click(function(e) {
       e.preventDefault();
-      $('.feat-menu-item').removeClass('feat-selected');
-      $(this).addClass('feat-selected');
+      $('.feat-menu-item').removeClass('active');
+      $(this).addClass('active');
 
       var id = this.id.substring(5);
       var img = "#img-" + id;
