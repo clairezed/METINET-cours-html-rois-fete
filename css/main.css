@@ -404,12 +404,12 @@ nav .item-btn{
     }
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
     body{
         background: url(../img/logo_flat.png) no-repeat 0% 60%;
         /*background-size: 20%;*/
     }
-}
+}*/
 
 
 /* Adaptation tablettes */
@@ -737,30 +737,38 @@ nav .item-btn{
       top: -10px;
       border-color: transparent transparent transparent transparent !important;
     }
+
+    .active.bubble-top-pink:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-yellow:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-green:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-blue:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
 }
-
-
-/**************************** exemple justify **********************/
-
-
-
-
-
 
 /**************************** Seasonal **********************/
 
+.seasonal-container{
+    background: #f7f7f7;
+    margin: 10px 0;
+}
 
 .seasonal{
     margin-top: 3em;
 }
+    .seasonal h1{
+        padding-top: 10px;
+    }
 
-/* -- DEFAULTS -- */
-
-/*div, ul, li{
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}*/
 
 /* -- FLUID GRID STYLES -- */
 
@@ -773,7 +781,7 @@ nav .item-btn{
 
 #Grid li{
   display: inline-block;
-  background: #ccc;
+  background: #fff;
   color: black;
   width: 31%;
   padding-top: 1%; /* Used instead of height to give elements fluid, width-based height */
@@ -783,9 +791,13 @@ nav .item-btn{
   text-align: center;
 }
 
-/* #Grid li:hover > a{
-  color: red;
-} */
+#Grid li:hover {
+  -moz-box-shadow: 2px 2px 10px 0px #656565;
+-webkit-box-shadow: 2px 2px 10px 0px #656565;
+-o-box-shadow: 2px 2px 10px 0px #656565;
+box-shadow: 2px 2px 10px 0px #656565;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=10);
+} 
 
 #Grid li:hover > a .pink{
   background: #d90484;
@@ -1187,7 +1199,7 @@ s
 }
 
 #reseaux a{
-    color: #aa;
+    /*color: #aaa;*/
 }
 
 #reseaux a:hover{
@@ -1195,7 +1207,7 @@ s
 }
 
 #reseaux-sociaux a{
-    color: #aa;
+    /*color: #aaa;*/
 }
 
 #reseaux-sociaux a:hover{
@@ -1228,7 +1240,7 @@ footer{
     margin-top: 0px;
     font-size: 1em;
     background-color: #EEE;
-    border-top: solid;
+    /*border-top: solid;*/
     text-align: left;
 
 }
@@ -1450,6 +1462,6 @@ footer article ul li {
 }
 
 .product-container a:hover{
-    color: blue;
+    color: #969696;
 }
 
