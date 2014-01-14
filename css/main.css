@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Headings */
 h1 {
-    font-size: 1.571em;
+    font-size: 1.5em;
     font-weight: bold;} /* 22px*/
 h2 { font-size: 1.286em;    } /* 18px*/
 h3 {font-size: 1em} /* 14px */
@@ -191,10 +191,13 @@ nav .title-btn{
     text-align: left;
 }
     nav .title-btn img{
-        width: 40px;
+        width: 70px;
         display: inline;
         float: left;
         margin-right: 5px;
+    }
+    nav .title-btn h1{
+        line-height: 1;
     }
     nav .title-btn:hover{
         color: #969696;
@@ -385,6 +388,9 @@ nav .item-btn{
     }
         nav .title-btn h1 {
             font-size: 1.2em;    
+        }
+        nav .title-btn img{
+            width: 40px;
         }
     .search-nav form{
         width: 100%;
@@ -1201,3 +1207,64 @@ footer article ul li {
         display: none;
     }
 }
+
+
+
+/************************** PRODUCT PAGE ******************************/
+
+.product-container{
+        width: 90%;
+        max-width: 920px;
+        margin: 0 auto;
+}
+.breadcrumb, .product{
+    margin-bottom: 20px;
+}
+.product{
+    display: inline-block;
+}
+.container-picture, .product-desc{
+    display: inline-block;
+    width: 47%;
+}
+
+.product-desc{
+    vertical-align: top;
+    margin-left: 20px;
+}
+    .product-desc .header-product{
+        margin-bottom: 20px;
+    }
+
+.add-kart{
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        display: inline-block;
+        padding: 3px 7px;
+        margin: 20px 5px 10px;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        border: 1px solid #969696;
+        /*border-radius: 3px;*/
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        float: right;
+    }
+        .add-kart:hover{
+            color: #fff;
+            background-color: #CCC;
+            border-color: #888;
+        }
+
+.similar-products li{
+    display: inline-block;
+}
+
+
