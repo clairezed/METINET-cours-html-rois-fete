@@ -29,8 +29,6 @@ html{
 
 /* Body */
 body {
-    /*background: #EEE;*/
-    /*background: #77CAC8;*/
     color: #1A1A1A;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Montserrat', 'Lucida Sans
@@ -406,6 +404,11 @@ nav .item-btn{
     }
 }
 
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/logo_flat.png) no-repeat 0% 60%;
+    }
+}
 
 
 /* Adaptation tablettes */
@@ -460,13 +463,13 @@ nav .item-btn{
     header{
         /*padding-bottom: 60px;*/
         height: auto;
-        }
-    header:after{
-        clear: both;
-        content: "";
-        display: block;
     }
-    nav a{
+        header:after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+    header nav a{
         line-height: 22px;
     }    
     header nav.main-nav{
@@ -675,7 +678,6 @@ nav .item-btn{
   z-index: -1;
   content: '';
   border-style: solid;
-  color: red;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   left: -webkit-calc(50% - 10px);
@@ -703,6 +705,26 @@ nav .item-btn{
 }
 
 .bubble-top-blue:hover:before {
+    border-color: transparent transparent #008dd4 transparent;
+}
+
+.active.bubble-top-pink:before {
+    top: -10px;
+    border-color: transparent transparent #d90484 transparent;
+}
+
+.active.bubble-top-yellow:before {
+    top: -10px;
+    border-color: transparent transparent #f5ab00 transparent;
+}
+
+.active.bubble-top-green:before {
+    top: -10px;
+    border-color: transparent transparent #85b82e transparent;
+}
+
+.active.bubble-top-blue:before {
+    top: -10px;
     border-color: transparent transparent #008dd4 transparent;
 }
 
@@ -1347,6 +1369,9 @@ footer article ul li {
         width: 90%;
         max-width: 920px;
         margin: 0 auto;
+}
+.product-container a:hover{
+    color: #969696;
 }
 .breadcrumb, .product{
     margin-bottom: 20px;
