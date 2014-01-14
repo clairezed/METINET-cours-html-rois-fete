@@ -37,7 +37,6 @@ body {
     text-align: left;
     width: 100%;
     height: 100%;
-    background: url(../img/logo_flat.png) no-repeat 0% 60%
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -405,6 +404,11 @@ nav .item-btn{
     }
 }
 
+@media screen and (min-width: 768px) {
+    body{
+        background: url(../img/logo_flat.png) no-repeat 0% 60%;
+    }
+}
 
 
 /* Adaptation tablettes */
@@ -459,13 +463,13 @@ nav .item-btn{
     header{
         /*padding-bottom: 60px;*/
         height: auto;
-        }
-    header:after{
-        clear: both;
-        content: "";
-        display: block;
     }
-    nav a{
+        header:after{
+            clear: both;
+            content: "";
+            display: block;
+        }
+    header nav a{
         line-height: 22px;
     }    
     header nav.main-nav{
