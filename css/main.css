@@ -390,14 +390,6 @@ nav .item-btn{
     }
 }
 
-/*@media screen and (min-width: 768px) {
-    body{
-        background: url(../img/logo_flat.png) no-repeat 0% 60%;
-        /*background-size: 20%;*/
-    }
-}*/
-
-
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
     header{
