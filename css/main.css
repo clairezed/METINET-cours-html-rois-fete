@@ -1,17 +1,3 @@
-/* Orga générale styles inspirées de la méthode Daisy :
-reset
-typo (charte typographique)
-formulaires (forms)
-rythme, grille (grid)
-positionnement des blocs principaux (layout)
-styles génériques (skins)
-variantes par gabarits (pages)
-surcharges
-ie
-*/
-
-
-
 /* Imports */
 /*@import url("reset.css");
 @import url("global-forms.css");*/
@@ -403,14 +389,6 @@ nav .item-btn{
         width: 45%;
     }
 }
-
-/*@media screen and (min-width: 768px) {
-    body{
-        background: url(../img/logo_flat.png) no-repeat 0% 60%;
-        /*background-size: 20%;*/
-    }
-}*/
-
 
 /* Adaptation tablettes */
 @media screen and (min-width: 480px) and (max-width: 768px) {
