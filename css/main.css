@@ -1375,6 +1375,8 @@ footer article ul li {
 }
 .product{
     display: inline-block;
+    background-color: #f7f7f7;
+    padding: 10px;
 }
 .container-picture, .product-desc{
     display: inline-block;
@@ -1435,17 +1437,21 @@ footer article ul li {
             background-color: #CCC;
             border-color: #888;
         }
-
-.similar-products li{
-    display: inline-block;
+.similar-products{
+    margin-top: 20px;
 }
+    .similar-products h2{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .similar-products li{
+        display: inline-block;
+    }
 
-.similar-products img{
-    max-height: 150px;
-    max-width: 220px;
-}
+    .similar-products img{
+        max-height: 150px;
+        max-width: 220px;
+    }
 
-.product-container a:hover{
-    color: #969696;
-}
+
 
