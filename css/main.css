@@ -407,6 +407,7 @@ nav .item-btn{
 /*@media screen and (min-width: 768px) {
     body{
         background: url(../img/logo_flat.png) no-repeat 0% 60%;
+        /*background-size: 20%;*/
     }
 }*/
 
@@ -736,8 +737,23 @@ nav .item-btn{
       top: -10px;
       border-color: transparent transparent transparent transparent !important;
     }
-}
 
+    .active.bubble-top-pink:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-yellow:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-green:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+
+    .active.bubble-top-blue:before {
+        border-color: transparent transparent transparent transparent !important;
+    }
+}
 
 /**************************** Seasonal **********************/
 

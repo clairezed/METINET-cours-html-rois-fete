@@ -364,80 +364,83 @@
       </header>
 
       <div class="product-container">
-        <div class="breadcrumb">
-          <p>
-            <span><a href="#">Accueil ></a> </span>
-            <span><a href="#">Farces et attrapes ></a> </span>
-            <span><a href="#">Trucs qui pêtent > </a> </span>
-            <span><a href="#">Coussin pêteur </a> </span>
-          </p>
-        </div>
-        <section class="product">
-          <div class="container-picture">
-            <div class="main-picture">
-              <img src="img/product/coussin-peteur.png">
-            </div>
-            <div class="secondary-pictures">
-              <img src="img/product/coussin-peteur.png">
-              <img src="img/product/coussin-peteur.png">
-              <img src="img/product/coussin-peteur.png">
-              <img src="img/product/coussin-peteur.png">
-            </div>
+        <div itemscope itemtype ="http://schema.org/Product">
+          <div class="breadcrumb">
+            <p>
+              <span><a href="#">Accueil ></a> </span>
+              <span><a href="#">Farces et attrapes ></a> </span>
+              <span><a href="#">Trucs qui pêtent > </a> </span>
+              <span><a href="#">Coussin pêteur </a> </span>
+            </p>
           </div>
-          <div class="product-desc">
-            <div class="header-product">
-              <h1>Coussin pêteur</h1>
-              <div class="ratings">
-                <span class="icon icon-star"></span>
-                <span class="icon icon-star"></span>
-               <span class="icon icon-star-empty"></span>
-               <a href="#">Lire les 8 avis</a>
+          <section class="product">
+            <div class="container-picture">
+              <div class="main-picture">
+                <img src="img/product/coussin-peteur.png" itemprop="image">
+              </div>
+              <div class="secondary-pictures">
+                <img src="img/product/coussin-peteur.png" itemprop="image">
+                <img src="img/product/coussin-peteur.png" itemprop="image">
+                <img src="img/product/coussin-peteur.png" itemprop="image">
+                <img src="img/product/coussin-peteur.png" itemprop="image">
               </div>
             </div>
-            <div class="body-product">
-              <p>
-                But I know the rage that drives you. That impossible anger strangIing the grief until the memory of your loved one is just poison in your veins. And one day, you catch yourself wishing the person you loved had never existed so you'd be spared your pain.
-              </p>
-              <p>
-                You see? It's the slow knife. The knife that takes its time. The knife that waits years, without forgetting, then slips quietly between the bones, that's the knife that cuts the deepest.
-              </p>
+            <div class="product-desc">
+              <div class="header-product">
+                <h1 itemprop="name">Coussin pêteur</h1>
+                <div class="ratings" itemprop="aggregateRating">
+                  <span class="icon icon-star"></span>
+                  <span class="icon icon-star"></span>
+                  <span class="icon icon-star-empty"></span>
+                  <a href="#">Lire les 8 avis</a>
+                </div>
+              </div>
+              <div class="body-product" itemprop="description">
+                <p>
+                  But I know the rage that drives you. That impossible anger strangIing the grief until the memory of your loved one is just poison in your veins. And one day, you catch yourself wishing the person you loved had never existed so you'd be spared your pain.
+                </p>
+                <p>
+                  You see? It's the slow knife. The knife that takes its time. The knife that waits years, without forgetting, then slips quietly between the bones, that's the knife that cuts the deepest.
+                </p>
+              </div>
+              <div class="footer-product">
+                <h2 itemprop="price">Prix : 12.50 €</h2>
+                <button class="add-kart">Ajouter au panier</button>
+              </div>
             </div>
-            <div class="footer-product">
-              <h2>Prix : 12.50 €</h2>
-              <button class="add-kart">Ajouter au panier</button>
-            </div>
-          </div>
-        </section>
-        <section class="similar-products">
-          <h2> Vous aimerez aussi </h2>
-          <ul>
-            <li>
-              <a href="#">
-              <img src="img/product/pate-peteuse.jpg">
-              <h3>pate pêteuse</h3>
-            </a>
-            </li>
-            <li>
-              <a href="#">
-              <img src="img/product/pate-peteuse.jpg">
-              <h3>pate pêteuse</h3>
-            </a>
-            </li>
-            <li>
-              <a href="#">
-              <img src="img/product/pate-peteuse.jpg">
-              <p>pate pêteuse</p>
-            </a>
-            </li>
-            <li>
-              <a href="#">
-              <img src="img/product/pate-peteuse.jpg">
-              <h3>pate pêteuse</h3>
-            </a>
-            </li>
-          </ul>
-        </section>
+          </section>
+          <section class="similar-products">
+            <h2> Vous aimerez aussi </h2>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="img/product/pate-peteuse.jpg" itemprop="image">
+                  <h3 itemprop="name">pate pêteuse</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/product/pate-peteuse.jpg" itemprop="image">
+                  <h3 itemprop="name">pate pêteuse</h3>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/product/pate-peteuse.jpg" itemprop="image">
+                  <p itemprop="name">pate pêteuse</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/product/pate-peteuse.jpg" itemprop="image">
+                  <h3 itemprop="name">pate pêteuse</h3>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
+
 
 
 
@@ -459,7 +462,7 @@
   <footer>
         <div class="bottom">
           <article>
-      <header  role="banner">Nous connaitre</header>
+      <header>Nous connaitre</header>
             <ul>
               <li class="pink2">
                 <a href="#">Livraison</a>
@@ -470,7 +473,7 @@
             </ul>
           </article>
           <article>
-      <header  role="banner">Aide</header>
+      <header>Aide</header>
             <ul>
               <li class="green2">
                 <a href="#">FAQ</a>
@@ -484,7 +487,7 @@
             </ul>
           </article>
           <article>
-      <header  role="banner">Informations légales</header>
+      <header>Informations légales</header>
             <ul>
               <li class="yellow2">
                 <a href="#">Mentions légales</a>
@@ -498,7 +501,7 @@
             </ul>
           </article>
           <article>
-      <header  role="banner">Partenaires</header>
+      <header>Partenaires</header>
             <ul>
               <li class="pink2">
                 <a href="#">Livre d'or</a>
