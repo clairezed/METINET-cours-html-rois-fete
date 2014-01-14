@@ -786,7 +786,6 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, St
 /* Adaptation tablettes */
 @media screen and (min-width: 768px) {
         
-
     #Grid header{
         width: 100%;
         margin-top: 0.1%;
@@ -973,11 +972,9 @@ filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, St
 
 }
 
-}
-
 @media (max-device-width: 480px){
   
-    #Grid  img{
+    #Grid img{
     max-height: 80px;
     max-height: 80px;
     background-color: whites;
