@@ -1351,6 +1351,9 @@ footer article ul li {
         max-width: 920px;
         margin: 0 auto;
 }
+.product-container a:hover{
+    color: #969696;
+}
 .breadcrumb, .product{
     margin-bottom: 20px;
 }
