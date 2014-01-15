@@ -26,3 +26,9 @@
 
 ## Redirection 404
 ErrorDocument 404 /roidelafete/index.html
+
+## Autres redirections d'erreur (comentées, car pages d'erreur non existantes)
+#ErrorDocument 400     /roidelafete/400.html 
+#ErrorDocument 401     /roidelafete/401.html 
+#ErrorDocument 403     /roidelafete/403.html 
+#ErrorDocument 500     /roidelafete/500.html
